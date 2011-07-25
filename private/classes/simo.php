@@ -23,7 +23,7 @@ include_once 'H:/www/eshop/private/classes/smarty/Smarty.class.php';
  */
 function autoload($className) {
   global $__cfg;
-  
+
   if(file_exists($fn = $__cfg['site.main.dir'] . 'private/classes/stdclass/' . $className . '.php')) {
     include_once($fn);
   }
@@ -39,12 +39,12 @@ function autoload($className) {
   if(file_exists($fn = $__cfg['site.main.dir'] . 'private/classes/gkh/' . $className . '.php')) {
     include_once($fn);
   }
-  
+
   if(file_exists($fn = $__cfg['site.main.dir'] . 'private/classes/FileManager/' . $className . '.php')) {
     include_once($fn);
   }
-  
-  if(file_exists($fn = $__cfg['site.main.dir'] . 'private/classes/Shop/' . $className . '.php')) {
+
+  if(file_exists($fn = $__cfg['site.main.dir'] . 'private/classes/sbn/' . $className . '.php')) {
     include_once($fn);
   }
 }
