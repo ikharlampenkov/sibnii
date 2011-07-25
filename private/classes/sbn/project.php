@@ -22,7 +22,7 @@ ENGINE = InnoDB
  *
  * @author Administrator
  */
-class project {
+class project extends sbn {
 
     //private $_img;
 
@@ -35,9 +35,12 @@ class project {
 
     }
 
-    public function getAllProject() {
+    public function getAllProject($is_complite = -1) {
         try {
             $sql = 'SELECT * FROM project';
+            if ($is_complite != -1) {
+                $sql .= ' WHERE is_complite=' . $is_complite;
+            }
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
                 return $result;
@@ -52,7 +55,7 @@ class project {
         try {
             $sql = 'SELECT project.id, project.title, project.description, is_complite
                     FROM project, client
-                    WHERE client.id=project.client_id AND project.id=' . $id;
+                    WHERE client.id=project.client_id AND client.id=' . $id;
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
                 return $result;
@@ -133,6 +136,21 @@ class project {
         try {
             $sql = 'DELETE FROM project WHERE id=' . (int)$id;
             $this->_db->query($sql);
+        } catch (Exception $e) {
+            simo_exception::registrMsg($e, $this->_debug);
+        }
+    }
+    
+    public function saveServiceList($id, $data) {
+        try {
+            $sql = 'DELETE FROM project_service WHERE project_id=' . (int)$id;
+            $this->_db->query($sql);
+            
+            foreach ($data['project'] as $service_id => $value) {
+                $sql = 'INSERT INTO project_service(project_id, service_id) VALUES(' . $id . ', ' . $service_id . ')';
+                $this->_db->query($sql);
+            }
+            
         } catch (Exception $e) {
             simo_exception::registrMsg($e, $this->_debug);
         }

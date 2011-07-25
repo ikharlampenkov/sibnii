@@ -1,9 +1,30 @@
+<?php /* Smarty version Smarty-3.0.7, created on 2011-07-26 00:03:15
+         compiled from "H:/www/sibnii/private/smartytemplates/templates/index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:19964e2da1d3055ed9-25172351%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '84209888c23a15728e9cb29b2fca432f2ea5162b' => 
+    array (
+      0 => 'H:/www/sibnii/private/smartytemplates/templates/index.tpl',
+      1 => 1311613393,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '19964e2da1d3055ed9-25172351',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 <html>
 
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"></meta>
-        <meta name="DESCRIPTION" content="{$description}"></meta>
-        <meta name="keywords" content="{$keywords}"></meta>
+        <meta name="DESCRIPTION" content="<?php echo $_smarty_tpl->getVariable('description')->value;?>
+"></meta>
+        <meta name="keywords" content="<?php echo $_smarty_tpl->getVariable('keywords')->value;?>
+"></meta>
         <meta name="author-corporate" content=""></meta>
         <meta name="publisher-email" content=""></meta>
 
@@ -11,7 +32,8 @@
             body { margin: 0px; padding: 0px; font-family: tahoma; }
         </style>
 
-        <title>{$title}</title>
+        <title><?php echo $_smarty_tpl->getVariable('title')->value;?>
+</title>
 
     </head>
 
@@ -40,24 +62,13 @@
 
 
             <div style="position:absolute; top:350px; left: 30px; font-size: 100%">
-                {if isset($page) && !empty($page)}
-                    {include file="$page.tpl"}
-                {else}
-                    {include file="service.tpl"}   
-                {/if}
-                {*
-                <ul>
-                <li>Выполнение проектной документации по разработке месторождений твердых полезных ископаемых.</li>
-                <li>Проекты ликвидации и консервации горных выработок.</li>
-                <li>Проекты переработки минерального сырья.</li>
-                <li>Проектирование автомобильных и железных дорог и их хозяйств.</li>
-                <li>Проектирование промышленных и гражданских объектов (все разделы проектной документации).</li>
-                <li>Проектирование объектов инфраструктуры.</li>
-                <li>Проекты охраны окружающей среды.</li>
-                <li>Функции генерального проектировщика.</li>
-                <li>Авторский надзор за строительством.</li>
-                </ul>
-                *}
+                <?php if (isset($_smarty_tpl->getVariable('page',null,true,false)->value)&&!empty($_smarty_tpl->getVariable('page',null,true,false)->value)){?>
+                    <?php $_template = new Smarty_Internal_Template(($_smarty_tpl->getVariable('page')->value).".tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php unset($_template);?>
+                <?php }else{ ?>
+                    <?php $_template = new Smarty_Internal_Template("service.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php unset($_template);?>   
+                <?php }?>
             </div>
 
             <div style="position:absolute; top:150px; right: 40px; z-index:100;"><img src="/i/phone.gif"></div>
@@ -82,7 +93,7 @@
 
         </div>
 
-        {if $login==false}
+        <?php if ($_smarty_tpl->getVariable('login')->value==false){?>
 
             <table width="100%" height="100%" cellpadding="10" cellspacing="10" border="0">
                 <tr>
@@ -94,7 +105,7 @@
                                 <tr><td style="color:white">Логин: </td><td><input name="login" type="text" style="width:190px;border:10px;font-size: 16px;"></td></tr>
                                 <tr><td style="color:white">Пароль:</td><td><input name="psw" type="password" style="width:190px;border:10px;font-size: 16px;"></td></tr>
                                 <tr><td>&nbsp;</td><td><input type="submit" value="Войти" style="width:190px;font-size: 16px;"></td></tr>     
-                                <tr><td></td><td>{if isset($login_fail)}<div style="color:white; font-weight:bold; font-size:12px;">Невервный логин и пароль.</div>{/if}</td></tr>
+                                <tr><td></td><td><?php if (isset($_smarty_tpl->getVariable('login_fail',null,true,false)->value)){?><div style="color:white; font-weight:bold; font-size:12px;">Невервный логин и пароль.</div><?php }?></td></tr>
 
                             </form>
                         </table>
@@ -104,9 +115,9 @@
                 </tr>
             </table>
 
-        {else}
+        <?php }else{ ?>
 
-        {/if}
+        <?php }?>
 
     </dody>
 </html>

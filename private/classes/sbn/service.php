@@ -1,7 +1,7 @@
 <?php
 
 /*
-CREATE  TABLE IF NOT EXISTS `sibnii`.`service` (
+CREATE  TABLE IF NOT EXISTS `service` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT ,
   `title` VARCHAR(45) NULL ,
   `description` TEXT NULL ,
@@ -14,7 +14,7 @@ ENGINE = InnoDB
  *
  * @author Administrator
  */
-class service {
+class service extends sbn {
 
     //private $_img;
 
@@ -50,6 +50,25 @@ class service {
                 return $result;
             } else
                 return false;
+        } catch (Exception $e) {
+            simo_exception::registrMsg($e, $this->_debug);
+        }
+    }
+    
+    public function getServiceArrayByProject($id) {
+        try {
+            $sql = 'SELECT service.id 
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=' . $id;
+            $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
+            if (isset($result[0])) {
+                $retArray = array();
+                foreach ($result as $res) {
+                   $retArray[] = $res['id']; 
+                }
+                return $retArray;
+            } else
+                return array();
         } catch (Exception $e) {
             simo_exception::registrMsg($e, $this->_debug);
         }

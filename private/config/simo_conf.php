@@ -7,8 +7,8 @@
  * @package simo
  */
 
-$__cfg['db.dsn'] = 'mysqli://root:2BGxPIIB@localhost/eshop';
-$__cfg['site.main.dir'] = 'H:/www/eshop/';
+$__cfg['db.dsn'] = 'mysqli://root:2BGxPIIB@localhost/sibnii';
+$__cfg['site.main.dir'] = 'H:/www/sibnii/';
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 
@@ -31,7 +31,7 @@ $__cfg['smarty.default.keyword'] = '';
 $__cfg['smarty.encoding'] = 'utf-8';
 
 $__cfg['site.dir'] = $__cfg['site.main.dir'] . 'public/';
-$__cfg['site.url'] = 'http://www.eshop/';
+$__cfg['site.url'] = 'http://www.sibnii/';
 
 $__cfg['temp.dir'] = $__cfg['site.main.dir'] . 'private/temp/';
 $__cfg['file.upload.dir'] = $__cfg['site.main.dir'] . 'public/files/';

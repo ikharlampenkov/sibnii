@@ -65,7 +65,7 @@ class File {
      * @access public
      */
     public function download($field) {
-        if (isset($_FILES[$field])) {
+        if (isset($_FILES[$field]) && $_FILES[$field]['error'] == 0) {
             $this->_ext = $this->extractExt($_FILES[$field]['name']);
             $tempFileName = 'file_' . date('d-m-Y-H-i-s') . '.' . $this->_ext;
             $result = copy($_FILES[$field]['tmp_name'], $this->_path . $tempFileName);
@@ -126,8 +126,12 @@ class File {
      * @access protected
      */
     protected function extractExt($name) {
-        $tempInfo = pathinfo($name);
-        return $tempInfo['extension'];
+        if (!empty($name)) {
+            $tempInfo = pathinfo($name);
+            return $tempInfo['extension'];
+        } else {
+            return '';
+        }
     }
 
 // end of member function extractExt

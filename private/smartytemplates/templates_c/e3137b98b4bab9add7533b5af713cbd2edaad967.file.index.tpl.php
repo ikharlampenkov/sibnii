@@ -1,3 +1,22 @@
+<?php /* Smarty version Smarty-3.0.7, created on 2011-07-25 22:51:41
+         compiled from "H:/www/sibnii/private/smartytemplates/templates/admin/index.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:31514e2d910d9e2c34-08883091%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'e3137b98b4bab9add7533b5af713cbd2edaad967' => 
+    array (
+      0 => 'H:/www/sibnii/private/smartytemplates/templates/admin/index.tpl',
+      1 => 1311609097,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '31514e2d910d9e2c34-08883091',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
 <html>
     <head>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"></meta>
@@ -72,14 +91,15 @@ a { color:#1465c0}
         <script type="text/javascript" language="javascript" src="/js/jquery.min.js" ></script>
         <script type="text/javascript" language="javascript" src="/js/main.js" ></script>
 
-        <title>{$title}</title>
+        <title><?php echo $_smarty_tpl->getVariable('title')->value;?>
+</title>
 
     </head>
     <body>
-        {include file="error_msg.tpl"}
+        <?php $_template = new Smarty_Internal_Template("error_msg.tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php unset($_template);?>
 
         <table width="1000" height="100%" cellpadding="0" cellspacing="0" border="0" align="center">
-            {*up*}
             <tr>
                 <td valign="top" height="40">
 
@@ -88,7 +108,9 @@ a { color:#1465c0}
                             <td style="font-size:26px; color: white;padding-left: 25px;" valign="middle">административная панель управения</td>
                             <td width="300" valign="middle" style="color:white">
 
-                                Пользователь: {$user} &nbsp; / &nbsp; <a href="{$siteurl}?logout" style="color:black">Выйти</a>
+                                Пользователь: <?php echo $_smarty_tpl->getVariable('user')->value;?>
+ &nbsp; / &nbsp; <a href="<?php echo $_smarty_tpl->getVariable('siteurl')->value;?>
+?logout" style="color:black">Выйти</a>
 
                             </td>
                         </tr>
@@ -97,8 +119,6 @@ a { color:#1465c0}
 
                 </td>
             </tr>
-            {*end up*}
-            {*middle*}
             <tr>
                 <td>
 
@@ -119,9 +139,10 @@ a { color:#1465c0}
                             </td>
                             <td>
 
-                                {if isset($page) && !empty($page)}
-                                    {include file="admin/$page.tpl"}
-                                {/if}
+                                <?php if (isset($_smarty_tpl->getVariable('page',null,true,false)->value)&&!empty($_smarty_tpl->getVariable('page',null,true,false)->value)){?>
+                                    <?php $_template = new Smarty_Internal_Template("admin/".($_smarty_tpl->getVariable('page')->value).".tpl", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
+ echo $_template->getRenderedTemplate();?><?php unset($_template);?>
+                                <?php }?>
 
                             </td>
                         </tr>
@@ -129,12 +150,9 @@ a { color:#1465c0}
 
                 </td>
             </tr>
-            {*end middle*}
-            {*down*}
             <tr>
                 <td height="40">&nbsp;</td>
             </tr>
-            {*end down*}
         </table>
 
 

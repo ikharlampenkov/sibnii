@@ -15,7 +15,7 @@
  *
  * @author Administrator
  */
-class client {
+class client extends sbn {
 
     private $_img;
 
@@ -23,7 +23,7 @@ class client {
         parent::__construct();
 
         global $__cfg;
-        $this->_img = new Image($__cfg['temp.public.dir']);
+        $this->_img = new Image($__cfg['file.upload.dir']);
 
 
     }
@@ -49,14 +49,14 @@ class client {
         try {
             $sql = 'SELECT client.id, client.title, client.description, logo
                     FROM client, project
-                    WHERE client.id=project.client_id AND project.ic=' . $id;
+                    WHERE client.id=project.client_id AND project.id=' . $id;
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['logo']);
                     $res['logo_prew'] = $this->_img->getPreview();
                 }
-                return $result;
+                return $result[0];
             } else
                 return false;
         } catch (Exception $e) {

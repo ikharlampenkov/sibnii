@@ -11,11 +11,9 @@
  */
 
 class share_user extends share {
-    const UT_CUSTOMER = 'customer';
     const UT_ADMIN = 'admin';
-    const UT_DESTROYER = 'destroyer';
 
-    public $role_list = array(0 => share_user::UT_ADMIN, 1 => share_user::UT_CUSTOMER, 2 => share_user::UT_DESTROYER);
+    public $role_list = array(0 => share_user::UT_ADMIN);
 
     public function __construct() {
         parent::__construct();

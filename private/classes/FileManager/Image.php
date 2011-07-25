@@ -21,7 +21,8 @@ class Image extends File {
      * @access public
      */
     public function download($field) {
-        if (isset($_FILES[$field])) {
+        //print_r($_FILES[$field]);
+        if (isset($_FILES[$field]) && $_FILES[$field]['error'] == 0) {
             $this->_ext = $this->extractExt($_FILES[$field]['name']);
 
             if (!in_array($this->_ext, $this->_extList)) {

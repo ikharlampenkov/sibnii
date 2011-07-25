@@ -12,8 +12,15 @@ if (isset($_GET['action'])) {
     $action = '';
 }
 
+if (isset($_GET['subaction'])) {
+    $subaction = $_GET['subaction'];
+} else {
+    $subaction = '';
+}
+
 $o_smarty->assign('page', $page);
 $o_smarty->assign('action', $action);
+$o_smarty->assign('subaction', $subaction);
 
 if ($page == 'content_page') {
 
@@ -78,168 +85,145 @@ if ($page == 'user') {
     }
 }
 
-if ($page == 'catalog') {
-    $o_catalog = new ProductCatalog();
+if ($page == 'service') {
 
-    if (isset($_GET['rubric'])) {
-        $cur_rubric = Rubric::getInstanceById($_GET['rubric']);
-    } else {
-        $cur_rubric = Rubric::getRootRubric();
-    }
+    $o_service = new service();
 
-    $o_smarty->assign('cur_rubric', $cur_rubric);
-
-    if ($action == 'add_rubric') {
+    if ($action == 'add') {
         if (isset($_POST['data'])) {
-            $o_rubric = new Rubric();
-            $o_rubric->setTitle($_POST['data']['title']);
-            $o_rubric->setParent($_POST['data']['parent']);
-            $o_rubric->insertToDb();
-            simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-            exit;
-        }
-
-        $o_smarty->assign('rubric_tree', $o_catalog->getRubricTree());
-        $o_smarty->assign('txt', 'Добавить рубрику');
-    } elseif ($action == 'edit_rubric' && isset($_GET['id'])) {
-        $o_rubric = Rubric::getInstanceById($_GET['id']);
-
-        if (isset($_POST['data'])) {
-            $o_rubric->setTitle($_POST['data']['title']);
-            $o_rubric->setParent($_POST['data']['parent']);
-            $o_rubric->updateToDb();
-            simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-            exit;
-        }
-
-        $o_smarty->assign('rubric', $o_rubric);
-        $o_smarty->assign('rubric_tree', $o_catalog->getRubricTree());
-        $o_smarty->assign('txt', 'Редактировать рубрику');
-    } elseif ($action == 'del_rubric' && isset($_GET['id'])) {
-        $o_rubric = Rubric::getInstanceById($_GET['id']);
-        $o_rubric->deleteFromDb();
-        unset($o_rubric);
-        simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-        exit;
-    } elseif ($action == 'add_product') {
-        if (isset($_POST['data'])) {
-            $o_product = new Product();
-            $o_product->setTitle($_POST['data']['title']);
-            $o_product->setRubric($_POST['data']['rubric']);
-            $o_product->setShortText($_POST['data']['short_text']);
-            $o_product->setFullText($_POST['data']['full_text']);
-            $o_product->setPrice($_POST['data']['price']);
-            $o_product->insertToDb();
-            simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-            exit;
-        }
-
-        $o_smarty->assign('rubric_tree', $o_catalog->getRubricTree());
-        $o_smarty->assign('txt', 'Добавить товар');
-    } elseif ($action == 'edit_product' && isset($_GET['id'])) {
-        $o_product = Product::getInstanceById($_GET['id']);
-
-        if (isset($_POST['data'])) {
-            $o_product->setTitle($_POST['data']['title']);
-            $o_product->setRubric($_POST['data']['rubric']);
-            $o_product->setShortText($_POST['data']['short_text']);
-            $o_product->setFullText($_POST['data']['full_text']);
-            $o_product->setPrice($_POST['data']['price']);
-            $o_product->updateToDb();
-            simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-            exit;
-        }
-
-        $o_smarty->assign('product', $o_product);
-        $o_smarty->assign('rubric_tree', $o_catalog->getRubricTree());
-        $o_smarty->assign('txt', 'Редактировать товар');
-    } elseif ($action == 'del_product' && isset($_GET['id'])) {
-        $o_product = Product::getInstanceById($_GET['id']);
-        $o_product->deleteFromDb();
-        unset($o_product);
-        simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-        exit;
-    } elseif ($action == 'del_img' && isset($_GET['id'])) {
-        $o_product = Product::getInstanceById($_GET['id']);
-        $o_product->deleteImg();
-        simo_functions::chLocation('?page=' . $page . '&rubric=' . $cur_rubric->id);
-        exit;
-    } else {
-
-
-        $o_smarty->assign('rubric_list', $o_catalog->getAllRubric($cur_rubric->getId()));
-        $o_smarty->assign('product_list', $o_catalog->getAllProduct($cur_rubric->getId()));
-        $o_smarty->assign('path', $cur_rubric->getPathToRubric());
-    }
-}
-
-if ($page == 'order') {
-    
-    $o_catalog = new ProductCatalog();
-    
-    
-    if ($action == 'add_status') {
-        $o_status = new Status();
-        if (isset($_POST['data'])) {
-            $o_status->setTitle($_POST['data']['title']);
-            $o_status->setPrior($_POST['data']['prior']);
-            $o_status->setColor($_POST['data']['color']);
-            $o_status->insertToDb();
-            simo_functions::chLocation('?page=' . $page);
-            exit;
-        }
-        $o_smarty->assign('status', $o_status);
-        $o_smarty->assign('txt', 'Добавить статус');
-    } elseif ($action == 'edit_status' && isset($_GET['id'])) {
-        $o_status = Status::getInstanceById($_GET['id']);
-
-        if (isset($_POST['data'])) {
-            $o_status->setTitle($_POST['data']['title']);
-            $o_status->setPrior($_POST['data']['prior']);
-            $o_status->setColor($_POST['data']['color']);
-            $o_status->updateToDb();
+            $o_service->addService($_POST['data']);
             simo_functions::chLocation('?page=' . $page);
             exit;
         }
 
-        $o_smarty->assign('status', $o_status);
-        $o_smarty->assign('txt', 'Редактировать статус');
-    } elseif ($action == 'del_status' && isset($_GET['id'])) {
-        $o_status = Status::getInstanceById($_GET['id']);
-        $o_status->deleteFromDb();
-        unset($o_status);
-        simo_functions::chLocation('?page=' . $page);
-        exit;
+        $o_smarty->assign('service', '');
+        $o_smarty->assign('txt', 'Добавить услугу');
     } elseif ($action == 'edit' && isset($_GET['id'])) {
-        $o_order = Order::getInstanceById($_GET['id']);
 
         if (isset($_POST['data'])) {
-            $o_order->setDiscount($_POST['data']['discount']);
-            $o_order->setIsComplite($_POST['data']['is_complite']);
-            $o_order->setStatus($_POST['data']['status']);
-            
-            $o_order->updateToDb();
+            $o_service->updateService($_GET['id'], $_POST['data']);
             simo_functions::chLocation('?page=' . $page);
             exit;
         }
 
-        $o_user = new share_user();
-        $o_smarty->assign('user_list', $o_user->getAllUser());
-        $o_smarty->assign('status_list', Status::getAllInstance());
-        
-        $o_smarty->assign('order', $o_order);
-        $o_smarty->assign('txt', 'Редактировать заказ');
-    } elseif ($action == 'del' && isset($_GET['id'])) {
-        $o_order = Order::getInstanceById($_GET['id']);
-        $o_order->deleteFromDb();
-        unset($o_product);
+        $o_smarty->assign('txt', 'Редактировать услугу');
+        $o_smarty->assign('service', $o_service->getService($_GET['id']));
+    } elseif ($action == 'del') {
+        $o_service->deleteService($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+    } else {
+        $o_smarty->assign('service_list', $o_service->getAllService());
+    }
+}
+
+if ($page == 'client') {
+
+    $o_client = new client();
+
+    if ($action == 'add') {
+        if (isset($_POST['data'])) {
+            $o_client->addClient($_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('client', '');
+        $o_smarty->assign('txt', 'Добавить клиента');
+    } elseif ($action == 'edit' && isset($_GET['id'])) {
+
+        if (isset($_POST['data'])) {
+            $o_client->updateClient($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Редактировать клиента');
+        $o_smarty->assign('client', $o_client->getClient($_GET['id']));
+    } elseif ($action == 'del') {
+        $o_client->deleteClient($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+    } elseif ($action == 'del_img' && isset($_GET['id'])) {
+        $o_client->deleteFile($_GET['id'], 'img');
         simo_functions::chLocation('?page=' . $page);
         exit;
     } else {
-        $o_smarty->assign('status_list', Status::getAllInstance());
-        $o_smarty->assign('order_list', $o_catalog->getAllOrder());        
+        $o_smarty->assign('client_list', $o_client->getAllClient());
     }
 }
+
+if ($page == 'project') {
+
+    $o_project = new project();
+    $o_client = new client();
+
+    if ($action == 'add') {
+        if (isset($_POST['data'])) {
+            $o_project->addProject($_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        //$o_smarty->assign('project', '');
+        $o_smarty->assign('txt', 'Добавить проект');
+        $o_smarty->assign('client_list', $o_client->getAllClient());
+    } elseif ($action == 'edit' && isset($_GET['id'])) {
+
+        if (isset($_POST['data'])) {
+            $o_project->updateProject($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Редактировать проект');
+        $o_smarty->assign('project', $o_project->getProject($_GET['id']));
+        $o_smarty->assign('client_list', $o_client->getAllClient());
+    } elseif ($action == 'del') {
+        $o_project->deleteProject($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+    } elseif ($action == 'service' && isset($_GET['id'])) {
+        if (isset($_POST['data'])) {
+            $o_project->saveServiceList($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_service = new service();
+        $o_smarty->assign('service_list', $o_service->getAllService());
+        $o_smarty->assign('service_array', $o_service->getServiceArrayByProject($_GET['id']));
+        $o_smarty->assign('project', $o_project->getProject($_GET['id']));
+    } elseif ($action == 'photo_view') {
+        $o_gallery = new gallery();
+        $o_smarty->assign('project', $o_project->getProject($_GET['id']));
+
+        if ($subaction == 'add') {
+            if (isset($_POST['data'])) {
+                $o_gallery->addImage($_POST['data']);
+                simo_functions::chLocation('?page=' . $page . '&action=photo_view&id=' . $_GET['id']);
+                exit;
+            }
+
+            $o_smarty->assign('txt', 'Добавить фотографию');
+        } elseif ($subaction == 'edit') {
+
+            if (isset($_POST['data'])) {
+                $o_gallery->updateImage($_GET['img_id'], $_POST['data']);
+                simo_functions::chLocation('?page=' . $page . '&action=photo_view&id=' . $_GET['id']);
+                exit;
+            }
+
+            $o_smarty->assign('txt', 'Редактировать фотографию');
+            $o_smarty->assign('img', $o_gallery->getImage($_GET['img_id']));
+        } elseif ($subaction == 'del') {
+            $o_gallery->deleteImage($_GET['img_id']);
+            simo_functions::chLocation('?page=' . $page . '&action=photo_view&id=' . $_GET['id']);
+        } else {
+            $o_smarty->assign('gallery', $o_gallery->getImageByObject($_GET['id']));
+        }
+    } else {
+        $o_smarty->assign('project_list', $o_project->getAllProject());
+    }
+}
+
 
 $o_smarty->display('admin/index.tpl');
 ?>
