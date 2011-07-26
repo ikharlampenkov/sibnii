@@ -224,6 +224,10 @@ if ($page == 'project') {
     }
 }
 
+if ($page == '') {
+    $o_service = new service();
+    $o_smarty->assign('service_list', $o_service->getAllService());
+}
 
 $o_smarty->display('admin/index.tpl');
 ?>

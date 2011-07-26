@@ -43,7 +43,7 @@
                 {if isset($page) && !empty($page)}
                     {include file="$page.tpl"}
                 {else}
-                    {include file="service.tpl"}   
+                    {include file="service.tpl"}
                 {/if}
                 {*
                 <ul>
@@ -66,12 +66,12 @@
 
             <div style="position:absolute; top:100px; width:1000; height: 212px; right: 177px;">
 
-                <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
+                <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
                         codebase="http://download.macromedia.com/pub/shockwave/ cabs/flash/swflash. cab#version=9,0,29,0" width="800" height="212">
                     <PARAM name="movie" value="/i/flash.swf">
                     <PARAM name="quality" value="high">
                     <EMBED src="/i/flash.swf"
-                           QUALITY="best" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" 
+                           QUALITY="best" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"
                            TYPE="application/x-shockwave-flash" width="800" height="212" wmode="transparent">
                     </EMBED>
                 </OBJECT>
@@ -81,32 +81,6 @@
 
 
         </div>
-
-        {if $login==false}
-
-            <table width="100%" height="100%" cellpadding="10" cellspacing="10" border="0">
-                <tr>
-                    <td valign="middle" align="center">
-
-                        <table height="100" width="300" cellpadding="10" cellspacing="0" border="0" style="background-color:#69aefc">
-                            <form method="post" style="margin:0px; padding:0px;">
-                                <tr><td></td><td style="font-size:26px; color: white;padding-left: 25px;"></td></tr>
-                                <tr><td style="color:white">Логин: </td><td><input name="login" type="text" style="width:190px;border:10px;font-size: 16px;"></td></tr>
-                                <tr><td style="color:white">Пароль:</td><td><input name="psw" type="password" style="width:190px;border:10px;font-size: 16px;"></td></tr>
-                                <tr><td>&nbsp;</td><td><input type="submit" value="Войти" style="width:190px;font-size: 16px;"></td></tr>     
-                                <tr><td></td><td>{if isset($login_fail)}<div style="color:white; font-weight:bold; font-size:12px;">Невервный логин и пароль.</div>{/if}</td></tr>
-
-                            </form>
-                        </table>
-
-
-                    </td>
-                </tr>
-            </table>
-
-        {else}
-
-        {/if}
 
     </dody>
 </html>

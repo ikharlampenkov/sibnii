@@ -1,15 +1,30 @@
 {if $action=="view"}
 
-    <table width="100%">
-        <tr>
-            <td class="ttovar">Название</td>
-            <td class="ttovar">{$service.title}</td>
-        </tr>
-        <tr>
-            <td class="ttovar">Текст</td>
-            <td class="ttovar">{$service.description|nl2br}</td>
-        </tr>
-    </table>
+    <h1>{$service.title}</h1>
+
+    <div>{$service.description|nl2br} </div>
+
+    {if $project_list!==false}
+        <h4>Проекты</h4>
+        <ul>
+            {foreach from=$project_list item=project}
+                <li><a href="?page=project&action=view&id={$project.id}">{$project.title}</a></li>
+            {/foreach}
+        </ul>
+    {/if}
+
+    {if $client_list!==false}
+        <h4>Клиенты</h4>
+
+        <table width="100%">
+            {foreach from=$client_list item=client}
+                <tr>
+                    <td>{if $client.logo_prew}<img src="{$siteurl}files/{$client.logo_prew}"/>{else}&nbsp;{/if}</td>
+                    <td class="ttovar"><a href="?page=client&action=view&id={$client.id}">{$client.title}</a></td>
+                </tr>
+            {/foreach}
+        </table>
+    {/if}
 
 {else}
 
