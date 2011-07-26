@@ -105,6 +105,44 @@ if ($o_fmuser->isLogin()) {
         }
     }
 
+    if ($page == 'news') {
+
+        $o_news = new gkh_news();
+
+        if ($action == 'view_news' && isset($_GET['id'])) {
+
+            if (isset($_POST['data'])) {
+                $o_news->addComment($_GET['id'], $_POST['data']);
+                simo_functions::chLocation('?page=news&action=view_news&id=' . $_GET['id']);
+                exit;
+            }
+
+            $news = $o_news->getNews($_GET['id']);
+            $o_smarty->assign('news', $news);
+        } else {
+            $o_smarty->assign('news_list_full', $o_news->getAllNews($category, $cur_page));
+        }
+    }
+
+    if ($page == 'content_page' && isset($_GET['title'])) {
+
+        $o_content_page = new gkh_content_page_site();
+        $o_smarty->assign('conpage', $o_content_page->getContentPage($_GET['title']));
+        $o_smarty->assign('conpage_title', $_GET['title']);
+    }
+
+    if ($page == 'personal') {
+        $o_personal = new gkh_personal();
+
+        $o_smarty->assign('personal_list', $o_personal->getAllPersonal());
+    }
+
+    if ($page == 'license') {
+
+        $o_license = new gkh_license();
+        $o_smarty->assign('license_list', $o_license->getAllLicense());
+    }
+
     if ($page == '') {
         $o_smarty->assign('service_list', $o_service->getAllService());
     }

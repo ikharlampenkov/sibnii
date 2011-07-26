@@ -21,7 +21,7 @@
             <tr>
                 <td class="ttovar">Профиль деятельности</td>
                 <td class="ttovar"><textarea name="data[description]">{$client.description}</textarea></td>
-            </tr> 
+            </tr>
         </table>
         <input id="save" name="save" type="submit" value="Сохранить" />
     </form>
@@ -32,7 +32,7 @@
         <table width="100%">
             {foreach from=$client_list item=client}
                 <tr>
-                    <td>{if $client.logo_prew}<img src="{$siteurl}files/{$client.logo_prew}"/>{else}&nbsp;{/if}</td>
+                    <td class="ttovar">{if $client.logo_prew}<img src="{$siteurl}files/{$client.logo_prew}"/>{else}&nbsp;{/if}</td>
                     <td class="ttovar">{$client.title}</td>
                     <td class="tedit"><a href="?page={$page}&action=edit&id={$client.id}" class="tedit">редактировать</a><br/><br/>
                         <a href="?page={$page}&action=del&id={$client.id}" class="tdel">удалить</a>

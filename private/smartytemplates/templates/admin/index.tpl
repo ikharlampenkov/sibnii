@@ -144,6 +144,9 @@
                                             <tr><td><a href="?page=client" class="menu">Клиенты</a></td></tr>
                                             <tr><td><a href="?page=service" class="menu">Услуги</a></td></tr>
                                             <tr><td><a href="?page=project" class="menu">Проекты</a></td></tr>
+                                            <tr><td><a href="?page=license" class="menu">Лицензии</a></td></tr>
+                                            <tr><td><a href="?page=personal" class="menu">Сотрудники</a></td></tr>
+                                            <tr><td><a href="?page=news" class="menu">Новости и события</a></td></tr>
                                         </table>
 
                                     </td>
@@ -156,7 +159,7 @@
                                     </td>
                                 </tr>
                             </table>
-                                    
+
                         </td>
                     </tr>
                 </table>

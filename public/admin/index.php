@@ -224,6 +224,105 @@ if ($page == 'project') {
     }
 }
 
+
+if ($page == 'license') {
+
+    $o_license = new gkh_license();
+
+    if ($action == 'add') {
+        if (isset($_POST['data'])) {
+            $o_license->addLicense($_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Добавить лицензию');
+    } elseif ($action == 'edit' && isset($_GET['id'])) {
+
+        if (isset($_POST['data'])) {
+            $o_license->updateLicense($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Редактировать лицензию');
+        $o_smarty->assign('license', $o_license->getLicense($_GET['id']));
+    } elseif ($action == 'del') {
+        $o_license->deleteLicense($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+        exit;
+    } elseif ($action == 'del_file') {
+        $o_license->deleteFile($_GET['id'], $_GET['field']);
+        simo_functions::chLocation('?page=' . $page . '&action=edit&id=' . $_GET['id']);
+    } else {
+        $o_smarty->assign('license_list', $o_license->getAllLicense());
+    }
+}
+
+if ($page == 'personal') {
+
+    $o_personal = new gkh_personal();
+
+    if ($action == 'add') {
+        if (isset($_POST['data'])) {
+            $o_personal->addPersonal($_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Добавить работника');
+    } elseif ($action == 'edit' && isset($_GET['id'])) {
+
+        if (isset($_POST['data'])) {
+            $o_personal->updatePersonal($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Редактировать работника');
+        $o_smarty->assign('personal', $o_personal->getPersonal($_GET['id']));
+    } elseif ($action == 'del') {
+        $o_personal->deletePersonal($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+        exit;
+    } elseif ($action == 'del_file') {
+        $o_personal->deleteFile($_GET['id'], $_GET['field']);
+        simo_functions::chLocation('?page=' . $page . '&action=edit&id=' . $_GET['id']);
+    } else {
+        $o_smarty->assign('personal_list', $o_personal->getAllPersonal());
+    }
+}
+
+if ($page == 'news') {
+
+    $o_news = new gkh_news();
+
+    if ($action == 'add_news') {
+        if (isset($_POST['data'])) {
+            $o_news->addNews($_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Добавить новость');
+    } elseif ($action == 'edit_news' && isset($_GET['id'])) {
+
+        if (isset($_POST['data'])) {
+            $o_news->updateNews($_GET['id'], $_POST['data']);
+            simo_functions::chLocation('?page=' . $page);
+            exit;
+        }
+
+        $o_smarty->assign('txt', 'Редактировать новость');
+        $o_smarty->assign('news', $o_news->getNews($_GET['id']));
+    } elseif ($action == 'del_news') {
+        $o_news->deleteNews($_GET['id']);
+        simo_functions::chLocation('?page=' . $page);
+    } else {
+        $o_smarty->assign('news_list', $o_news->getAllNews());
+    }
+}
+
 if ($page == '') {
     $o_service = new service();
     $o_smarty->assign('service_list', $o_service->getAllService());
