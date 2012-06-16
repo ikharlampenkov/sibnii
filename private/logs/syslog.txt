@@ -1323,3 +1323,62 @@ info   SELECT * FROM service  26.07.2011 00:04
 info   SELECT * FROM service  26.07.2011 00:04
 info   SELECT * FROM service WHERE id=1  26.07.2011 00:04
 info   SELECT * FROM service  26.07.2011 00:04
+info   SELECT * FROM service WHERE id=1  26.07.2011 00:18
+info   SELECT * FROM service  26.07.2011 00:18
+error   Can`t select db sibnii2No error: 1049:: Error msg: Unknown database 'sibnii2' ;  18.09.2011 22:00
+info   SELECT * FROM service  18.09.2011 22:00
+error   Can`t complit query: SELECT * FROM service No error: 1046:: Error msg: No database selected ;  18.09.2011 22:00
+error   Can`t select db sibnii2No error: 1049:: Error msg: Unknown database 'sibnii2' ;  18.09.2011 22:00
+info   SELECT * FROM service  18.09.2011 22:00
+error   Can`t complit query: SELECT * FROM service No error: 1046:: Error msg: No database selected ;  18.09.2011 22:00
+info   SELECT * FROM service  19.09.2011 21:21
+info   SELECT * FROM service  19.09.2011 21:21
+info   SELECT * FROM service  19.09.2011 21:30
+info   SELECT * FROM service  19.09.2011 21:30
+info   SELECT * FROM service  19.09.2011 21:31
+info   SELECT * FROM service  19.09.2011 21:31
+info   SELECT * FROM service  19.09.2011 21:31
+info   SELECT * FROM service  16.06.2012 23:55
+info   SELECT * FROM service  16.06.2012 23:55
+info   SELECT * FROM service  16.06.2012 23:55
+info   SELECT * FROM service  16.06.2012 23:55
+info   SELECT login, password, role FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM service  16.06.2012 23:56
+info   SELECT * FROM service  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM content_page  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM user  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM client  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM service  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:56
+info   SELECT * FROM project  16.06.2012 23:56
+info   SELECT password FROM user WHERE login="admin"  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM project  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM client  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM project WHERE is_complite=1  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM project WHERE is_complite=0  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM project WHERE id=2  16.06.2012 23:57
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=2  16.06.2012 23:57
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=2  16.06.2012 23:57
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=2  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM service WHERE id=1  16.06.2012 23:57
+info   SELECT * FROM service  16.06.2012 23:57

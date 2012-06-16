@@ -8,7 +8,7 @@
  */
 
 $__cfg['db.dsn'] = 'mysqli://root:2BGxPIIB@localhost/sibnii';
-$__cfg['site.main.dir'] = 'H:/www/sibnii/';
+$__cfg['site.main.dir'] = 'F:/www/sibnii/';
 $__cfg['db.driver.path'] = $__cfg['site.main.dir'] . 'private/classes/stdclass/db_driver/';
 $__cfg['db.driver.debug'] = true;
 
