@@ -23,7 +23,7 @@ $__cfg['smarty.cache']     = $__cfg['site.main.dir'] . 'private/smartytemplates/
 $__cfg['smarty.compile_check'] = true;
 $__cfg['smarty.debug'] = false;
 
-$__cfg['smarty.default.title'] = 'Eshop';
+$__cfg['smarty.default.title'] = 'Официальный сайт СибНИИуглепроект';
 $__cfg['smarty.default.desc'] = '';
 $__cfg['smarty.default.keyword'] = '';
 

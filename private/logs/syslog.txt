@@ -1382,3 +1382,731 @@ info   SELECT * FROM service  16.06.2012 23:57
 info   SELECT * FROM service  16.06.2012 23:57
 info   SELECT * FROM service WHERE id=1  16.06.2012 23:57
 info   SELECT * FROM service  16.06.2012 23:57
+info   SELECT * FROM service WHERE id=1  17.06.2012 00:02
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 00:02
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 00:02
+info   SELECT * FROM service WHERE id=1  17.06.2012 00:02
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 00:02
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 00:02
+info   SELECT * FROM service  17.06.2012 00:02
+info   SELECT * FROM service  17.06.2012 00:02
+info   SELECT login, password, role FROM user WHERE login="admin"  17.06.2012 00:02
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:02
+info   SELECT * FROM service  17.06.2012 00:02
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:02
+info   SELECT * FROM license  17.06.2012 00:02
+error   Can`t complit query: SELECT * FROM license No error: 1146:: Error msg: Table 'sibnii.license' doesn't exist ;  17.06.2012 00:02
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:07
+info   SELECT * FROM license  17.06.2012 00:07
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:07
+info   SELECT * FROM license  17.06.2012 00:07
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:07
+info   SELECT * FROM license  17.06.2012 00:07
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:14
+info   SELECT * FROM license  17.06.2012 00:14
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:14
+info   SELECT * FROM service  17.06.2012 00:14
+info   SELECT * FROM project  17.06.2012 00:22
+info   SELECT * FROM service  17.06.2012 00:38
+info   SELECT * FROM service  17.06.2012 00:40
+info   SELECT * FROM service  17.06.2012 00:41
+info   SELECT * FROM service  17.06.2012 00:43
+info   SELECT * FROM service  17.06.2012 00:47
+info   SELECT * FROM service  17.06.2012 00:47
+info   SELECT * FROM service  17.06.2012 00:48
+info   SELECT * FROM service  17.06.2012 00:48
+info   SELECT * FROM service  17.06.2012 00:50
+info   SELECT * FROM service  17.06.2012 00:50
+info   SELECT * FROM service  17.06.2012 00:52
+info   SELECT * FROM project  17.06.2012 00:52
+info   SELECT * FROM service  17.06.2012 00:52
+info   SELECT * FROM service  17.06.2012 00:52
+info   SELECT * FROM service  17.06.2012 00:52
+info   SELECT * FROM service  17.06.2012 00:53
+info   SELECT * FROM service  17.06.2012 00:53
+info   SELECT * FROM service  17.06.2012 00:53
+info   SELECT * FROM service  17.06.2012 00:54
+info   SELECT * FROM service  17.06.2012 00:54
+info   SELECT * FROM service  17.06.2012 00:54
+info   SELECT * FROM project  17.06.2012 00:54
+info   SELECT * FROM project  17.06.2012 00:55
+info   SELECT login, password, role FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM service  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM content_page  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM user  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM client  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM service  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM project  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM license  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:56
+info   SELECT * FROM content_page  17.06.2012 00:56
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM content_page WHERE id=2 OR page_title="2"  17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM personal  17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM personal  17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM content_page  17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:57
+info   SELECT * FROM content_page WHERE id=2 OR page_title="2"  17.06.2012 00:57
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM content_page  17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM client  17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM user  17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM personal  17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM license  17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 00:59
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 00:59
+info   SELECT * FROM service  17.06.2012 00:59
+info   SELECT * FROM service  17.06.2012 00:59
+info   SELECT * FROM service  17.06.2012 00:59
+info   SELECT * FROM service  17.06.2012 00:59
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 01:00
+info   SELECT * FROM service  17.06.2012 01:07
+info   SELECT * FROM project  17.06.2012 01:07
+info   SELECT * FROM project  17.06.2012 01:09
+info   SELECT * FROM project  17.06.2012 01:12
+info   SELECT * FROM project WHERE id=1  17.06.2012 01:12
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 01:12
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 01:12
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 01:12
+info   SELECT * FROM project  17.06.2012 01:12
+info   SELECT * FROM project  17.06.2012 01:13
+info   SELECT * FROM project WHERE id=1  17.06.2012 01:13
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 01:13
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 01:13
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 01:13
+info   SELECT * FROM service  17.06.2012 21:12
+info   SELECT * FROM service WHERE id=1  17.06.2012 21:14
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 21:14
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 21:14
+info   SELECT * FROM service  17.06.2012 21:14
+info   SELECT * FROM project  17.06.2012 21:15
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:16
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:16
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:16
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:16
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:22
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:22
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:22
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:22
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:24
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:24
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:24
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:24
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:24
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:24
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:24
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:24
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:24
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:24
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:24
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:24
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:25
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:25
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:25
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:25
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:26
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:26
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:26
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:26
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:29
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:29
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:29
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:29
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:29
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:29
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:29
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:29
+info   SELECT * FROM project WHERE id=1  17.06.2012 21:29
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 21:29
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 21:29
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 21:29
+info   SELECT * FROM service  17.06.2012 21:29
+info   SELECT * FROM service  17.06.2012 21:30
+info   SELECT * FROM service WHERE id=1  17.06.2012 21:30
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 21:30
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 21:30
+info   SELECT * FROM service WHERE id=1  17.06.2012 21:31
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 21:31
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 21:31
+info   SELECT * FROM service  17.06.2012 21:31
+info   SELECT * FROM service WHERE id=9  17.06.2012 21:31
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=9  17.06.2012 21:31
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=9  17.06.2012 21:31
+info   SELECT * FROM service  17.06.2012 21:31
+info   SELECT * FROM service WHERE id=2  17.06.2012 21:31
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=2  17.06.2012 21:31
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=2  17.06.2012 21:31
+info   SELECT * FROM service  17.06.2012 21:32
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 21:32
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 21:34
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 21:39
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:39
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 21:40
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:40
+info   SELECT * FROM service  17.06.2012 21:41
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:41
+info   SELECT * FROM service  17.06.2012 21:43
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:43
+info   SELECT * FROM project  17.06.2012 21:43
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:43
+info   SELECT * FROM service  17.06.2012 21:43
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:43
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 21:43
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:43
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 21:43
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:43
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 21:46
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:46
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:46
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:46
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:46
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:46
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:48
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:48
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:48
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:48
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:49
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:49
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:50
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:50
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:51
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:51
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:53
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:53
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:53
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:53
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:53
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:53
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:54
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:54
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:54
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:54
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:57
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:57
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:57
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:57
+info   SELECT * FROM news WHERE id=1  17.06.2012 21:57
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:57
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:58
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:58
+info   SELECT * FROM news WHERE id=1  17.06.2012 21:58
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:58
+info   SELECT * FROM service  17.06.2012 21:58
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:58
+info   SELECT * FROM news WHERE id=1  17.06.2012 21:59
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:59
+info   SELECT * FROM news WHERE id=1  17.06.2012 21:59
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:59
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 21:59
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 21:59
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 22:03
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:03
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 22:03
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:03
+info   SELECT * FROM service  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM project  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM project WHERE id=1  17.06.2012 22:04
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 22:04
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 22:04
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM service  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM service WHERE id=1  17.06.2012 22:04
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  17.06.2012 22:04
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM content_page WHERE id=0 OR page_title="naprav"  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM content_page WHERE id=0 OR page_title="vacancy"  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:04
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:04
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:05
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:05
+info   SELECT * FROM service  17.06.2012 22:05
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:05
+info   SELECT * FROM project  17.06.2012 22:05
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:05
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 22:05
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:05
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:06
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:06
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:07
+info   SELECT * FROM service  17.06.2012 22:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:07
+info   SELECT * FROM project  17.06.2012 22:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:07
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:07
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 22:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:08
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 22:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:08
+info   SELECT * FROM service  17.06.2012 22:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:08
+info   SELECT * FROM service  17.06.2012 22:13
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:13
+info   SELECT * FROM service  17.06.2012 22:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:14
+info   SELECT login, password, role FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM service  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM content_page  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM user  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM client  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM service  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM project  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:15
+info   SELECT * FROM client  17.06.2012 22:15
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:17
+info   SELECT * FROM client  17.06.2012 22:17
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:18
+info   SELECT * FROM service  17.06.2012 22:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:18
+info   SELECT * FROM service  17.06.2012 22:20
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:20
+info   SELECT * FROM client  17.06.2012 22:20
+info   SELECT login, password, role FROM user WHERE login="admin"  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:22
+info   SELECT * FROM service  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:22
+info   SELECT * FROM client  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:22
+info   SELECT * FROM client WHERE id=2  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:22
+info   UPDATE client
+                    SET title="УГМК", description="Добыча угля"
+                    WHERE id=2  17.06.2012 22:22
+info   UPDATE client
+                        SET logo="img_17-06-2012-22-22-42.png" WHERE id=2  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:22
+info   SELECT * FROM client  17.06.2012 22:22
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client WHERE id=2  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   UPDATE client
+                    SET title="УГМК", description="Добыча угля"
+                    WHERE id=2  17.06.2012 22:27
+info   UPDATE client
+                        SET logo="img_17-06-2012-22-27-09.png" WHERE id=2  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client WHERE id=3  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   UPDATE client
+                    SET title="СДС Уголь", description="Добыча угля"
+                    WHERE id=3  17.06.2012 22:27
+info   UPDATE client
+                        SET logo="img_17-06-2012-22-27-18.png" WHERE id=3  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client WHERE id=4  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   UPDATE client
+                    SET title="Кузбассразрезуголь", description=""
+                    WHERE id=4  17.06.2012 22:27
+info   UPDATE client
+                        SET logo="img_17-06-2012-22-27-27.png" WHERE id=4  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client WHERE id=5  17.06.2012 22:27
+info   DELETE FROM client WHERE id=5  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM client  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM content_page  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM content_page WHERE id=2 OR page_title="2"  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   UPDATE content_page 
+                    SET page_title="contacts", title="Контакты", 
+                        content="" 
+                    WHERE id=2  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:27
+info   SELECT * FROM content_page  17.06.2012 22:27
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:28
+info   SELECT * FROM content_page WHERE id=1 OR page_title="1"  17.06.2012 22:28
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:28
+info   UPDATE content_page 
+                    SET page_title="about", title="О Компании", 
+                        content="О Компании" 
+                    WHERE id=1  17.06.2012 22:28
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:28
+info   SELECT * FROM content_page  17.06.2012 22:28
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:28
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   INSERT INTO content_page(page_title, title, content) 
+                    VALUES("naprav", "Направления деятельности", "Направления деятельности")  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   SELECT * FROM content_page  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   INSERT INTO content_page(page_title, title, content) 
+                    VALUES("vacancy", "Вакансии", "Вакансии")  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   SELECT * FROM content_page  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:29
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:30
+info   INSERT INTO content_page(page_title, title, content) 
+                    VALUES("rekvisite", "Реквизиты", "Реквизиты")  17.06.2012 22:30
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:30
+info   SELECT * FROM content_page  17.06.2012 22:30
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:30
+info   SELECT * FROM content_page  17.06.2012 22:30
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:30
+info   SELECT * FROM service  17.06.2012 22:30
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:30
+info   SELECT * FROM client  17.06.2012 22:30
+info   SELECT * FROM service  17.06.2012 22:30
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:30
+info   SELECT * FROM client  17.06.2012 22:30
+info   SELECT * FROM service  17.06.2012 22:32
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:32
+info   SELECT * FROM client  17.06.2012 22:32
+info   SELECT * FROM service  17.06.2012 22:33
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:33
+info   SELECT * FROM client  17.06.2012 22:33
+info   SELECT login, password, role FROM user WHERE login="admin"  17.06.2012 22:35
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:35
+info   SELECT * FROM service  17.06.2012 22:35
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:35
+info   SELECT * FROM service  17.06.2012 22:35
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:36
+info   SELECT * FROM service  17.06.2012 22:36
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:36
+info   SELECT * FROM service  17.06.2012 22:36
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM content_page WHERE id=0 OR page_title="naprav"  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM content_page WHERE id=0 OR page_title="naprav"  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM user  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM client  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM service  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM service WHERE id=1  17.06.2012 22:37
+info   SELECT password FROM user WHERE login="admin"  17.06.2012 22:37
+info   SELECT * FROM service  17.06.2012 22:37
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:37
+info   SELECT * FROM client  17.06.2012 22:37
+info   SELECT * FROM service  17.06.2012 22:37
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:37
+info   SELECT * FROM client  17.06.2012 22:37
+info   SELECT * FROM project  17.06.2012 22:37
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:37
+info   SELECT * FROM client  17.06.2012 22:37
+info   SELECT * FROM service  17.06.2012 22:37
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:37
+info   SELECT * FROM client  17.06.2012 22:37
+info   SELECT * FROM service  17.06.2012 22:39
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:39
+info   SELECT * FROM client  17.06.2012 22:39
+info   SELECT * FROM project  17.06.2012 22:39
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:39
+info   SELECT * FROM client  17.06.2012 22:39
+info   SELECT * FROM service  17.06.2012 22:39
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 22:39
+info   SELECT * FROM client  17.06.2012 22:39
+info   SELECT * FROM service  17.06.2012 23:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:07
+info   SELECT * FROM client  17.06.2012 23:07
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 23:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:07
+info   SELECT * FROM client  17.06.2012 23:07
+info   SELECT * FROM content_page WHERE id=0 OR page_title="naprav"  17.06.2012 23:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:07
+info   SELECT * FROM client  17.06.2012 23:07
+info   SELECT * FROM service  17.06.2012 23:07
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:07
+info   SELECT * FROM client  17.06.2012 23:07
+info   SELECT * FROM news  ORDER BY date DESC   17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM service  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM project  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM service  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM project  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM project WHERE id=1  17.06.2012 23:22
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  17.06.2012 23:22
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  17.06.2012 23:22
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM service  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM project  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM service  17.06.2012 23:22
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  17.06.2012 23:22
+info   SELECT * FROM client  17.06.2012 23:22

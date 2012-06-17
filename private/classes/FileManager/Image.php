@@ -70,6 +70,7 @@ class Image extends File {
             $newysize = $size;
         }
         $imagePrew = imagecreatetruecolor($newxsize, $newysize);
+        imagealphablending($imagePrew, false);
         $result = imagecopyresampled($imagePrew, $image, 0, 0, 0, 0, $newxsize, $newysize, $oldxsize, $oldysize);
         if ($result) {
             $this->_savePreviewFile($imagePrew);
@@ -131,7 +132,9 @@ class Image extends File {
     private function _savePreviewFile($imagePrew) {
         switch ($this->_ext) {
             case 'gif': return imagegif($imagePrew, $this->_path . $this->getPreview());
-            case 'png': return imagepng($imagePrew, $this->_path . $this->getPreview());
+            case 'png':
+                imagesavealpha($imagePrew, true);
+                return imagepng($imagePrew, $this->_path . $this->getPreview());
             case 'jpg': return imagejpeg($imagePrew, $this->_path . $this->getPreview());
             case 'jpeg': return imagejpeg($imagePrew, $this->_path . $this->getPreview());
         }

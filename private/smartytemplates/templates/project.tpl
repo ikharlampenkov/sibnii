@@ -1,46 +1,38 @@
 {if $action=="view"}
 
-    <h1>{$project.title}</h1>
+<h2>{$project.title}</h2>
 
-    <div>Клиент: {$client.title}</div><br/>
+<p>Клиент: {$client.title}</p>
 
-    <div>{$project.description|nl2br}</div>
+<p>{$project.description|nl2br}</p>
 
 
-    
-
+{*
     {if $service_list!==false}
-        <h4>Услуги</h4>
-        
-        <ul>
-            {foreach from=$service_list item=service}
-                <li><a href="?page=service&action=view&id={$service.id}">{$service.title}</a></li>
-            {/foreach}
-        </ul>
+    <h4>Услуги</h4>
+
+    <ul>
+        {foreach from=$service_list item=service}
+            <li><a href="?page=service&action=view&id={$service.id}">{$service.title}</a></li>
+        {/foreach}
+    </ul>
     {/if}
+*}
 
-    
-
-    {if $gallery!==false}
-        <h4>Галлерея проекта</h4>
-        
-        <table width="100%">
-            {foreach from=$gallery item=img}
-                <tr>
-                    <td><img src="{$siteurl}files/{$img.img_prew}" alt="{$img.description}"/></td>
-                </tr>
-            {/foreach}
-        </table>
-    {/if}   
-
-{else}
+    {else}
 
     {if $project_list!==false}
-        <ul>
-            {foreach from=$project_list item=project}
-                <li><a href="?page={$page}&action=view&id={$project.id}">{$project.title}</a></li>
-            {/foreach}
-        </ul>
+        {foreach from=$project_list item=project}
+        <div class="item">
+
+            <p class="date">21.05.2012</p>
+
+            <h2><a href="?page={$page}&action=view&id={$project.id}">{$project.title}</a></h2>
+
+            <p> Наименование и структура государственного органа, органа местного самоуправления, почтовый адрес, адрес электронной почты (при наличии), </p>
+
+        </div>
+        {/foreach}
     {/if}
 
 {/if}

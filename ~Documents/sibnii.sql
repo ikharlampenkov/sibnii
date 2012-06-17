@@ -1,13 +1,17 @@
 -- phpMyAdmin SQL Dump
--- version 3.3.3
+-- version 3.4.9
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Июл 26 2011 г., 00:04
+-- Время создания: Июн 17 2012 г., 23:09
 -- Версия сервера: 5.1.50
--- Версия PHP: 5.3.5
+-- Версия PHP: 5.3.9-ZS5.6.0
 
+SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT=0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -32,16 +36,16 @@ CREATE TABLE IF NOT EXISTS `client` (
   `description` text,
   `logo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Дамп данных таблицы `client`
 --
 
 INSERT INTO `client` (`id`, `title`, `description`, `logo`) VALUES
-(2, 'УГМК', 'Добыча угля', 'img_25-07-2011-20-33-39.jpg'),
-(3, 'СДС Уголь', 'Добыча угля', 'img_25-07-2011-20-37-16.jpg'),
-(4, 'Кузбассразрезуголь', '', NULL);
+(2, 'УГМК', 'Добыча угля', 'img_17-06-2012-22-27-09.png'),
+(3, 'СДС Уголь', 'Добыча угля', 'img_17-06-2012-22-27-18.png'),
+(4, 'Кузбассразрезуголь', '', 'img_17-06-2012-22-27-27.png');
 
 -- --------------------------------------------------------
 
@@ -57,14 +61,19 @@ CREATE TABLE IF NOT EXISTS `content_page` (
   `content` text,
   PRIMARY KEY (`id`),
   UNIQUE KEY `page_title_UNIQUE` (`page_title`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Дамп данных таблицы `content_page`
 --
 
 INSERT INTO `content_page` (`id`, `page_title`, `title`, `content`) VALUES
-(1, 'about', 'Обращение руководителя', 'Обращение руководителя');
+(1, 'about', 'О Компании', 'О Компании'),
+(2, 'contacts', 'Контакты', ''),
+(3, 'smi', 'СМИ о компании', ''),
+(4, 'naprav', 'Направления деятельности', 'Направления деятельности'),
+(5, 'vacancy', 'Вакансии', 'Вакансии'),
+(6, 'rekvisite', 'Реквизиты', 'Реквизиты');
 
 -- --------------------------------------------------------
 
@@ -89,6 +98,77 @@ INSERT INTO `gallery` (`id`, `img`, `description`, `object_id`) VALUES
 (2, 'img_25-07-2011-22-48-45.jpg', 'Белаз', 1),
 (3, 'img_25-07-2011-22-49-06.jpg', 'Экскаватор', 2),
 (4, 'img_25-07-2011-22-50-39.jpg', 'Погрузка', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `license`
+--
+
+DROP TABLE IF EXISTS `license`;
+CREATE TABLE IF NOT EXISTS `license` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `license`
+--
+
+INSERT INTO `license` (`id`, `description`, `img`) VALUES
+(1, 'Лицензия на осуществление дилерской деятельности', 'img_26-07-2011-09-19-33.jpg'),
+(2, '', 'img_26-07-2011-09-25-57.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `news`
+--
+
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE IF NOT EXISTS `news` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `short_text` text,
+  `full_text` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `news`
+--
+
+INSERT INTO `news` (`id`, `date`, `title`, `short_text`, `full_text`) VALUES
+(1, '2011-07-26 00:00:00', 'Первая новость', 'апоапоапопаопаоаопаоап аоа аоа паоапоа', 'паопаопаоопопаопаопаопао паопаопа паоа паоапо поапо поапо'),
+(2, '2011-07-26 00:00:00', 'Первая новость 2', 'арвараврварва варв аврв аврва рварв', 'авраврварв врва врвар аврварв');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `personal`
+--
+
+DROP TABLE IF EXISTS `personal`;
+CREATE TABLE IF NOT EXISTS `personal` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `fio` varchar(100) NOT NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `department` varchar(255) DEFAULT NULL,
+  `position` varchar(255) DEFAULT NULL,
+  `contact` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `personal`
+--
+
+INSERT INTO `personal` (`id`, `fio`, `foto`, `department`, `position`, `contact`) VALUES
+(1, 'Власов Василий Петрович', 'img_26-07-2011-13-56-50.jpg', '', '', ''),
+(2, 'Степаненко Сергей Петрович', 'img_26-07-2011-14-02-50.jpg', 'варварва', 'аврварва', 'авраврва');
 
 -- --------------------------------------------------------
 
@@ -150,15 +230,22 @@ CREATE TABLE IF NOT EXISTS `service` (
   `title` varchar(255) DEFAULT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Дамп данных таблицы `service`
 --
 
 INSERT INTO `service` (`id`, `title`, `description`) VALUES
-(1, 'Выполнение проектной документации по разработке месторождений твердых полезных ископаемых.', 'Выполнение проектной документации по разработке месторождений твердых полезных ископаемых.'),
-(2, 'Проекты ликвидации и консервации горных выработок.', 'Проекты ликвидации и консервации горных выработок.');
+(1, 'Выполнение проектной документации по разработке месторождений твердых полезных ископаемых', 'Выполнение проектной документации по разработке месторождений твердых полезных ископаемых.'),
+(2, 'Проекты ликвидации и консервации горных выработок', 'Проекты ликвидации и консервации горных выработок.'),
+(3, 'Проекты переработки минерального сырья', ''),
+(4, 'Проектирование автомобильных и железных дорог и их хозяйств', ''),
+(5, 'Проектирование промышленных и гражданских объектов (все разделы проектной документации)', ''),
+(6, 'Проектирование объектов инфраструктуры', ''),
+(7, 'Проекты охраны окружающей среды', ''),
+(8, 'Функции генерального проектировщика', ''),
+(9, 'Авторский надзор за строительством', '');
 
 -- --------------------------------------------------------
 
@@ -197,3 +284,9 @@ ALTER TABLE `project`
 ALTER TABLE `project_service`
   ADD CONSTRAINT `fk_project_service_project1` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_project_service_service1` FOREIGN KEY (`service_id`) REFERENCES `service` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+SET FOREIGN_KEY_CHECKS=1;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

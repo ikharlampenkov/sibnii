@@ -64,6 +64,28 @@ class client extends sbn {
         }
     }
 
+    public function getClientByService($id) {
+        try {
+            $sql = 'SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=' . $id;
+            $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
+            if (isset($result[0])) {
+                foreach ($result as &$res) {
+                    $this->_img->setName($res['logo']);
+                    $res['logo_prew'] = $this->_img->getPreview();
+                }
+                return $result;
+            } else
+                return false;
+        } catch (Exception $e) {
+            simo_exception::registrMsg($e, $this->_debug);
+        }
+    }
+
     public function getClient($id) {
         try {
             $sql = 'SELECT * FROM client WHERE id=' . (int)$id;

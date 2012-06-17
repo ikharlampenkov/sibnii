@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Сен 19 2011 г., 18:40
--- Версия сервера: 5.0.77
--- Версия PHP: 5.2.12
+-- Время создания: Июн 16 2012 г., 21:06
+-- Версия сервера: 5.1.58
+-- Версия PHP: 5.2.17
 
 SET FOREIGN_KEY_CHECKS=0;
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -30,11 +30,11 @@ START TRANSACTION;
 
 DROP TABLE IF EXISTS `client`;
 CREATE TABLE `client` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` text,
-  `logo` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
+  `logo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
@@ -55,11 +55,11 @@ INSERT INTO `client` (`id`, `title`, `description`, `logo`) VALUES
 
 DROP TABLE IF EXISTS `content_page`;
 CREATE TABLE `content_page` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `page_title` varchar(40) NOT NULL COMMENT 'английское название для системы',
   `title` varchar(255) NOT NULL,
   `content` text,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   UNIQUE KEY `page_title_UNIQUE` (`page_title`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
@@ -80,11 +80,11 @@ INSERT INTO `content_page` (`id`, `page_title`, `title`, `content`) VALUES
 
 DROP TABLE IF EXISTS `gallery`;
 CREATE TABLE `gallery` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `img` varchar(255) default NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `img` varchar(255) DEFAULT NULL,
   `description` text,
-  `object_id` int(11) default NULL,
-  PRIMARY KEY  (`id`)
+  `object_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
@@ -104,10 +104,10 @@ INSERT INTO `gallery` (`id`, `img`, `description`, `object_id`) VALUES
 
 DROP TABLE IF EXISTS `license`;
 CREATE TABLE `license` (
-  `id` int(11) NOT NULL auto_increment,
-  `description` varchar(255) default NULL,
-  `img` varchar(255) default NULL,
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `description` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -126,12 +126,12 @@ INSERT INTO `license` (`id`, `description`, `img`) VALUES
 
 DROP TABLE IF EXISTS `news`;
 CREATE TABLE `news` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `date` datetime NOT NULL,
   `title` varchar(255) NOT NULL,
   `short_text` text,
   `full_text` text,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -150,13 +150,13 @@ INSERT INTO `news` (`id`, `date`, `title`, `short_text`, `full_text`) VALUES
 
 DROP TABLE IF EXISTS `personal`;
 CREATE TABLE `personal` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `fio` varchar(100) NOT NULL,
-  `foto` varchar(255) default NULL,
-  `department` varchar(255) default NULL,
-  `position` varchar(255) default NULL,
+  `foto` varchar(255) DEFAULT NULL,
+  `department` varchar(255) DEFAULT NULL,
+  `position` varchar(255) DEFAULT NULL,
   `contact` text,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
@@ -175,12 +175,12 @@ INSERT INTO `personal` (`id`, `fio`, `foto`, `department`, `position`, `contact`
 
 DROP TABLE IF EXISTS `project`;
 CREATE TABLE `project` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` text,
-  `is_complite` tinyint(1) NOT NULL default '0',
+  `is_complite` tinyint(1) NOT NULL DEFAULT '0',
   `client_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `fk_project_client` (`client_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
@@ -202,7 +202,7 @@ DROP TABLE IF EXISTS `project_service`;
 CREATE TABLE `project_service` (
   `project_id` int(10) unsigned NOT NULL,
   `service_id` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`project_id`,`service_id`),
+  PRIMARY KEY (`project_id`,`service_id`),
   KEY `fk_project_service_service1` (`service_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -223,10 +223,10 @@ INSERT INTO `project_service` (`project_id`, `service_id`) VALUES
 
 DROP TABLE IF EXISTS `service`;
 CREATE TABLE `service` (
-  `id` int(10) unsigned NOT NULL auto_increment,
-  `title` varchar(255) default NULL,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
   `description` text,
-  PRIMARY KEY  (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
@@ -255,7 +255,7 @@ CREATE TABLE `user` (
   `login` varchar(10) NOT NULL,
   `password` varchar(32) NOT NULL,
   `role` varchar(10) NOT NULL,
-  PRIMARY KEY  (`login`)
+  PRIMARY KEY (`login`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
