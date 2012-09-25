@@ -22,6 +22,17 @@ $o_smarty->assign('page', $page);
 $o_smarty->assign('action', $action);
 $o_smarty->assign('subaction', $subaction);
 
+include_once $__cfg['site.dir'] . 'ckeditor/ckeditor.php';
+include_once $__cfg['site.dir'] . 'ckfinder/ckfinder.php';
+
+$CKEditor = new CKEditor();
+$CKEditor->basePath = '/ckeditor/';
+$CKEditor->returnOutput = true;
+
+$ckFinder = new CKFinder();
+$ckFinder->BasePath = '/ckfinder/';
+$ckFinder->SetupCKEditorObject($CKEditor);
+
 if ($page == 'content_page') {
 
     $o_content_page = new gkh_content_page();
@@ -34,6 +45,7 @@ if ($page == 'content_page') {
         }
 
         $o_smarty->assign('conpage', '');
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[content]', ''));
         $o_smarty->assign('txt', 'Добавить контентную страницу');
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
@@ -43,8 +55,11 @@ if ($page == 'content_page') {
             exit;
         }
 
+        $conpage = $o_content_page->getContentPage($_GET['id']);
+
         $o_smarty->assign('txt', 'Редактировать контентную страницу');
-        $o_smarty->assign('conpage', $o_content_page->getContentPage($_GET['id']));
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[content]', $conpage['content']));
+        $o_smarty->assign('conpage', $conpage);
     } elseif ($action == 'del') {
         $o_content_page->deleteContentPage($_GET['id']);
         simo_functions::chLocation('?page=' . $page);
@@ -97,6 +112,7 @@ if ($page == 'service') {
         }
 
         $o_smarty->assign('service', '');
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[content]', $service['content']));
         $o_smarty->assign('txt', 'Добавить услугу');
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
@@ -106,8 +122,10 @@ if ($page == 'service') {
             exit;
         }
 
+        $service = $o_service->getService($_GET['id']);
         $o_smarty->assign('txt', 'Редактировать услугу');
-        $o_smarty->assign('service', $o_service->getService($_GET['id']));
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', $service['description']));
+        $o_smarty->assign('service', $service);
     } elseif ($action == 'del') {
         $o_service->deleteService($_GET['id']);
         simo_functions::chLocation('?page=' . $page);
@@ -128,6 +146,7 @@ if ($page == 'client') {
         }
 
         $o_smarty->assign('client', '');
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', ''));
         $o_smarty->assign('txt', 'Добавить клиента');
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
@@ -137,8 +156,10 @@ if ($page == 'client') {
             exit;
         }
 
+        $client = $o_client->getClient($_GET['id']);
         $o_smarty->assign('txt', 'Редактировать клиента');
-        $o_smarty->assign('client', $o_client->getClient($_GET['id']));
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', $client['description']));
+        $o_smarty->assign('client', $client);
     } elseif ($action == 'del') {
         $o_client->deleteClient($_GET['id']);
         simo_functions::chLocation('?page=' . $page);
@@ -165,6 +186,7 @@ if ($page == 'project') {
 
         //$o_smarty->assign('project', '');
         $o_smarty->assign('txt', 'Добавить проект');
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', ''));
         $o_smarty->assign('client_list', $o_client->getAllClient());
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
@@ -174,8 +196,11 @@ if ($page == 'project') {
             exit;
         }
 
+        $project = $o_project->getProject($_GET['id']);
+
         $o_smarty->assign('txt', 'Редактировать проект');
-        $o_smarty->assign('project', $o_project->getProject($_GET['id']));
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', $project['description']));
+        $o_smarty->assign('project', $project);
         $o_smarty->assign('client_list', $o_client->getAllClient());
     } elseif ($action == 'del') {
         $o_project->deleteProject($_GET['id']);
@@ -303,7 +328,7 @@ if ($page == 'news') {
             simo_functions::chLocation('?page=' . $page);
             exit;
         }
-
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', ''));
         $o_smarty->assign('txt', 'Добавить новость');
     } elseif ($action == 'edit_news' && isset($_GET['id'])) {
 
@@ -313,8 +338,10 @@ if ($page == 'news') {
             exit;
         }
 
+        $new = $o_news->getNews($_GET['id']);
         $o_smarty->assign('txt', 'Редактировать новость');
-        $o_smarty->assign('news', $o_news->getNews($_GET['id']));
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[full_text]', $new['full_text']));
+        $o_smarty->assign('news', $new);
     } elseif ($action == 'del_news') {
         $o_news->deleteNews($_GET['id']);
         simo_functions::chLocation('?page=' . $page);

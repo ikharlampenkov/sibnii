@@ -4,7 +4,7 @@
 
 <p>Клиент: {$client.title}</p>
 
-<p>{$project.description|nl2br}</p>
+<p>{$project.description}</p>
 
 
 {*

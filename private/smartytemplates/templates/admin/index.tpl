@@ -124,7 +124,7 @@
 
 </div>
 
-<div id="content">
+<div id="content" style="width: 90%;">
 
     <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="center">
         <tr>

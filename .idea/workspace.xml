@@ -2,167 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f92a96e2-643f-4e71-9dec-62f5b4cb548e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_loading.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_nav_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_nav_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_e.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_ne.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_nw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_se.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_sw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_shadow_w.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_title_left.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_title_main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_title_over.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancy_title_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancybox-x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancybox-y.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/fancybox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-09_prew.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-09_prew1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-18_prew.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-18_prew1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-27.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-27_prew.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_17-06-2012-22-27-27_prew1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-09-19-33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-09-19-33_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-09-25-57.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-09-25-57_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-53-55.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-53-55_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-54-26.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-54-26_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-56-50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-13-56-50_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-14-02-50.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/files/img_26-07-2011-14-02-50_prew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/arrr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/h1_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/h2_separator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/li_separator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/li_separator_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/menu_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/phone_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/phone_icon_fax.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/photo_slider_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/slider_kuzugol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/slider_sds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/slider_ugmk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/swf_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/flash.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/fon2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_04.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/BrowserPreview_06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/license21838.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/classes/gkh/gkh_license.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/classes/gkh/gkh_news.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/classes/gkh/gkh_personal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/license.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/personal.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/license.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/login.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/news.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/personal.tpl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates_c/37f3fff2ef00e4e7c62925e2848b4befd438ea8c.file.news.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/private/smartytemplates/templates_c/de7e1ba33ed486abac4ac3b004ba607e2b040dde.file.content_page.tpl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/jquery.easing-1.3.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/jquery.fancybox-1.3.4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/jquery.fancybox-1.3.4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/jquery.fancybox-1.3.4.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fancybox/jquery.mousewheel-3.0.4.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/png.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/swfobject.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/login/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/index2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/~Documents/backup/old/index2.php" />
-      <change type="DELETED" beforePath="F:\www\sibnii\nbproject\project.properties" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\nbproject\project.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\163aff3453abfa7a51121434eb99120b276d37fc.file.content_page.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\1d51240392328d0153cb03c840276910412aa0a0.file.service.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\1d8e398a247eb799d1c545c8f4d7ccc3d94777a0.file.user.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\2a5611844159e76e132dde5ab9ad197486087fb6.file.user.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\30aff718a1f07101142f7f3883cd03e56fc2a26a.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\32af5d6a8bd3e8b909bdbda672e86cabff8660f1.file.content_page.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\42f4e1fc400373ca6ad1bdb5f682ebd18e496f75.file.client.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\486633e70c184ab00b49713132793b47fc6397e0.file.service.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\59a5a98ae2e1c6d46b211a322a8dfd0d3ce8957a.file.catalog.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\6291b5d902587592547110434c8704ee8488a56f.file.error_msg.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\66458e1cc219af8006b85f227b790b8b2918977e.file.project.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\78dd0596aad5ead44dca598bbdb5949a428c7947.file.project.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\7ac71442ec59b7522cedab4786614a65829cf80f.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\84209888c23a15728e9cb29b2fca432f2ea5162b.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\9321a0d048d603326cad9537f168128095460b7b.file.client.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\a81145463682266806193fe8140774824ac1ef5b.file.client.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\ad9cfa0d03cf8dd47c9294ad38e6c0702f2f6bb2.file.error_msg.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\af85d1adba43c783a7f213a219eb1ac10d5d30c0.file.chart.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\be00624c12db9fe35a35668e40eaac0677c8dbde.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\ced83f63ddd86f3588df6a3ab7beb2434d98dca9.file.order.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\d85602d184a8622678cbde1eca408953bf0b8409.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\df34952232e7bfcc680e27ed4afd1d76d8c0e3e3.file.client.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\e10194e7de7ab6e259bbdb08e12910b046e35ea0.file.project.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\e2903f7add1a038a2220ed2d1f3b24bbb341c191.file.service.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\e3137b98b4bab9add7533b5af713cbd2edaad967.file.index.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\ff3c2c635c16bc535290589ecb529a9f1a6e3680.file.error_msg.tpl.php" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-33-39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-33-39_prew.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-37-16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-37-16_prew.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-48-24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="F:\www\sibnii\public\files\img_25-07-2011-20-48-24_prew.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/~Documents/tasks.odt" afterPath="$PROJECT_DIR$/~Documents/tasks.odt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/classes/FileManager/Image.php" afterPath="$PROJECT_DIR$/private/classes/FileManager/Image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/classes/sbn/client.php" afterPath="$PROJECT_DIR$/private/classes/sbn/client.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/config/simo_conf.php" afterPath="$PROJECT_DIR$/private/config/simo_conf.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/logs/syslog.txt" afterPath="$PROJECT_DIR$/private/logs/syslog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/frameworkRootSettings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/ckfinder/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/classes/sbn/service.php" afterPath="$PROJECT_DIR$/private/classes/sbn/service.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/index.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/index.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/client.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/client.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/project.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/project.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/service.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/service.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates_c/ef37665bcc80d87a3c42929057f30b93e28d0abf.file.index.tpl.php" afterPath="$PROJECT_DIR$/private/smartytemplates/templates_c/ef37665bcc80d87a3c42929057f30b93e28d0abf.file.index.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates_c/fad3184e6bb7f053b0ba2b49d8ab0b1b2975cfd8.file.project.tpl.php" afterPath="$PROJECT_DIR$/private/smartytemplates/templates_c/fad3184e6bb7f053b0ba2b49d8ab0b1b2975cfd8.file.project.tpl.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/index.php" afterPath="$PROJECT_DIR$/public/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/~Documents/debser_sibnii.sql" afterPath="$PROJECT_DIR$/~Documents/debser_sibnii.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/~Documents/sibnii.sql" afterPath="$PROJECT_DIR$/~Documents/sibnii.sql" />
-      <change type="MOVED" beforePath="F:\www\sibnii\private\smartytemplates\templates_c\fad3184e6bb7f053b0ba2b49d8ab0b1b2975cfd8.file.project.tpl.php" afterPath="$PROJECT_DIR$/private/smartytemplates/templates_c/5c4f091c2967bd4aa59704e1a582827821972801.file.service.tpl.php" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\arr1.gif" afterPath="$PROJECT_DIR$/~Documents/backup/arr1.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\arr2.gif" afterPath="$PROJECT_DIR$/~Documents/backup/arr2.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\flash.swf" afterPath="$PROJECT_DIR$/public/images/banner.swf" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\fon.gif" afterPath="$PROJECT_DIR$/~Documents/backup/fon.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\fon2.gif" afterPath="$PROJECT_DIR$/public/images/fon2.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\kru.gif" afterPath="$PROJECT_DIR$/~Documents/backup/kru.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\left.gif" afterPath="$PROJECT_DIR$/~Documents/backup/left.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\leftblock.gif" afterPath="$PROJECT_DIR$/~Documents/backup/leftblock.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\logo.jpg" afterPath="$PROJECT_DIR$/~Documents/backup/logo.jpg" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\menu.gif" afterPath="$PROJECT_DIR$/~Documents/backup/menu.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\news.gif" afterPath="$PROJECT_DIR$/~Documents/backup/news.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\phone.gif" afterPath="$PROJECT_DIR$/~Documents/backup/phone.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\right.gif" afterPath="$PROJECT_DIR$/~Documents/backup/right.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\sds.gif" afterPath="$PROJECT_DIR$/~Documents/backup/sds.gif" />
-      <change type="MOVED" beforePath="F:\www\sibnii\public\i\ugmk.gif" afterPath="$PROJECT_DIR$/~Documents/backup/ugmk.gif" />
     </list>
     <ignored path="sibnii.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,6 +34,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="sibnii" />
   </component>
@@ -196,22 +52,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/allinclud.php" />
-        <option value="$PROJECT_DIR$/private/classes/simo.php" />
-        <option value="$PROJECT_DIR$/private/config/simo_conf.php" />
-        <option value="$PROJECT_DIR$/private/smartytemplates/templates/project.tpl" />
-        <option value="$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl" />
-        <option value="$PROJECT_DIR$/private/classes/gkh/gkh_news.php" />
-        <option value="$PROJECT_DIR$/public/css/styles.css" />
-        <option value="$PROJECT_DIR$/private/smartytemplates/templates/news.tpl" />
-        <option value="$PROJECT_DIR$/private/smartytemplates/templates/service.tpl" />
-        <option value="$PROJECT_DIR$/public/css/admin.css" />
-        <option value="$PROJECT_DIR$/private/smartytemplates/templates/login.tpl" />
         <option value="$PROJECT_DIR$/private/classes/FileManager/Image.php" />
         <option value="$PROJECT_DIR$/private/smartytemplates/templates/index.tpl" />
+        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl" />
         <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl" />
-        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" />
+        <option value="$PROJECT_DIR$/public/admin/index.php" />
+        <option value="$PROJECT_DIR$/public/ckfinder/config.php" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/client.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/project.tpl" />
+        <option value="$PROJECT_DIR$/private/smartytemplates/templates/service.tpl" />
+        <option value="$PROJECT_DIR$/private/classes/sbn/service.php" />
       </list>
     </option>
   </component>
@@ -219,8 +75,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -248,6 +104,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,20 +129,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sibnii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sibnii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sibnii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="~Documents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,8 +163,26 @@
               <option name="myItemId" value="smartytemplates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates_c" />
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smartytemplates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -333,6 +203,14 @@
               <option name="myItemId" value="smartytemplates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -348,14 +226,44 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sibnii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="private" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -365,51 +273,38 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.VCSs.Git" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="web.server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/private" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="20d4e864-8479-4d4a-9e6d-c85667f5b709">
+      <server id="639bbd07-0442-43b8-abfb-86b8518c16dd">
+        <serverdata />
+      </server>
+      <server id="6b58c79d-ec8d-41be-8bd7-dc0216bd851d">
+        <serverdata />
+      </server>
+      <server id="6f833df3-70a8-4af3-b9f2-348485a7186d">
+        <serverdata />
+      </server>
+      <server id="7144338f-c275-4b23-a89b-4e93483cc0ab">
+        <serverdata />
+      </server>
+      <server id="d6463dd8-d930-4df3-8e52-d03b38341a0c">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping local="" />
+            <mapping />
           </mappings>
         </serverdata>
       </server>
-      <server id="4151daf2-ac1c-4e77-b1cf-19d1d98c6a14">
+      <server id="f1c33f62-20bd-43c1-8dfd-89330276120e">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="4d840075-802c-45a4-a895-3498b5db153f">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="60c178d7-55bc-4b3a-a403-0ae1cb4e2bd1">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="61070394-c104-4221-a08a-3e538d07dc0d">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="7d25f928-d403-4f27-b916-cdbccc75894e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
+            <mapping deploy="/private" local="$PROJECT_DIR$/private" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$/public" web="/" />
           </mappings>
         </serverdata>
       </server>
@@ -423,22 +318,35 @@
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
-      <method>
-        <option name="PhingTarget" enabled="false" />
-      </method>
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="FtpUpload" enabled="false">
-          <server_id />
-          <server_name />
-        </option>
-        <option name="PhingTarget" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f92a96e2-643f-4e71-9dec-62f5b4cb548e" name="Default" comment="" />
@@ -473,25 +381,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19263607" sideWeight="0.67082536" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25530303" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -519,7 +429,6 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
@@ -529,7 +438,6 @@
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
@@ -554,117 +462,123 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/news.tpl">
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.4803229">
-          <folding />
-        </state>
+        <state line="177" column="0" selection-start="5880" selection-end="5880" vertical-scroll-proportion="0.64883953" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/project.tpl">
+    <entry file="file://$PROJECT_DIR$/private/config/simo_conf.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.120080724">
-          <folding />
-        </state>
+        <state line="9" column="59" selection-start="127" selection-end="133" vertical-scroll-proportion="0.06861756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/service.tpl">
+    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="345" selection-end="345" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="209" selection-end="209" vertical-scroll-proportion="0.3343166">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/client.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="615" selection-end="1047" vertical-scroll-proportion="-20.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="437" column="18" selection-start="6878" selection-end="6884" vertical-scroll-proportion="0.7492625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/classes/FileManager/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="29" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.605449">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/classes/gkh/gkh_content_page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="847" selection-end="847" vertical-scroll-proportion="0.34207872">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="692" selection-end="692" vertical-scroll-proportion="-14.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="131" selection-start="591" selection-end="597" vertical-scroll-proportion="0.37739658">
-          <folding />
-        </state>
+        <state line="148" column="0" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.8799193" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="13" selection-start="5213" selection-end="5213" vertical-scroll-proportion="0.6145308">
+        <state line="132" column="26" selection-start="4649" selection-end="4649" vertical-scroll-proportion="-12.269231">
           <folding>
-            <marker date="1339947406731" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1339947406731" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1348569849690" expanded="true" signature="928:1020" placeholder="..." />
+            <marker date="1348569849690" expanded="true" signature="944:1008" placeholder="{...}" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="348" selection-end="348" vertical-scroll-proportion="0.1715439">
+        <state line="10" column="45" selection-start="348" selection-end="348" vertical-scroll-proportion="-6.5384617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/index.tpl">
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="0" selection-start="5880" selection-end="5880" vertical-scroll-proportion="0.64883953">
+        <state line="20" column="16" selection-start="905" selection-end="905" vertical-scroll-proportion="0.65384614">
+          <folding>
+            <element signature="e#355#376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="47" selection-start="538" selection-end="538" vertical-scroll-proportion="0.3596154">
+          <folding>
+            <element signature="e#5#51#0" expanded="true" />
+            <element signature="e#326#347#0" expanded="true" />
+            <element signature="e#1358#1377#0" expanded="true" />
+            <element signature="e#1967#1986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="339" column="0" selection-start="11618" selection-end="11618" vertical-scroll-proportion="0.5534709">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/config/simo_conf.php">
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="59" selection-start="127" selection-end="133" vertical-scroll-proportion="0.06861756">
+        <state line="9" column="34" selection-start="330" selection-end="330" vertical-scroll-proportion="0.29423076">
+          <folding>
+            <element signature="e#5#51#0" expanded="true" />
+            <element signature="e#331#352#0" expanded="true" />
+            <element signature="e#1309#1332#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckfinder/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.4576923">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/client.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="0" selection-start="4274" selection-end="4274" vertical-scroll-proportion="0.8799193">
+        <state line="15" column="53" selection-start="447" selection-end="447" vertical-scroll-proportion="-8.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/project.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="19" selection-start="166" selection-end="166" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/content_page.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="51" selection-end="51" vertical-scroll-proportion="-1.3076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/service.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="349" selection-end="349" vertical-scroll-proportion="0.4465291">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/classes/sbn/service.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="98" selection-start="2496" selection-end="2496" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="694" selection-end="694" vertical-scroll-proportion="0.5557692">
           <folding />
         </state>
       </provider>

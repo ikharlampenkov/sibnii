@@ -8,12 +8,12 @@
     <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$service.id}{/if}" method="post">
         <table width="100%">
             <tr>
-                <td class="ttovar">Название</td>
+                <td class="ttovar" style="width: 100px;">Название</td>
                 <td class="ttovar"><input name="data[title]" value="{$service.title}" /></td>
             </tr>
             <tr>
                 <td class="ttovar">Текст</td>
-                <td class="ttovar"><textarea name="data[description]">{$service.description}</textarea></td>
+                <td class="ttovar">{$ckeditor}{*<textarea name="data[description]">{$service.description}</textarea>*}</td>
             </tr>
         </table>
         <input id="save" name="save" type="submit" value="Сохранить" />

@@ -2,7 +2,7 @@
 
 <h2>{$service.title}</h2>
 
-<p>{$service.description|nl2br}</p>
+<p>{$service.description}</p>
 
 
     {if $project_list!==false}

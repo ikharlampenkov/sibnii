@@ -8,7 +8,7 @@
     <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$conpage.id}{/if}" method="post">
         <table width="100%">
             <tr>
-                <td class="ttovar" width="200">Название страницы (англ)</td>
+                <td class="ttovar" width="100">Название страницы (англ)</td>
                 <td class="ttovar"><input name="data[page_title]" value="{$conpage.page_title}" /></td>
             </tr>
             <tr>
@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td class="ttovar">Текст</td>
-                <td class="ttovar"><textarea name="data[content]">{$conpage.content}</textarea></td>
+                <td class="ttovar">{$ckeditor}{*<textarea name="data[content]">{$conpage.content}</textarea>*}</td>
             </tr>
         </table>
         <input id="save" name="save" type="submit" value="Сохранить" />
