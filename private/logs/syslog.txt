@@ -2110,3 +2110,19 @@ info   SELECT * FROM service  17.06.2012 23:22
 info   SELECT * FROM news
                     ORDER BY date DESC LIMIT 5  17.06.2012 23:22
 info   SELECT * FROM client  17.06.2012 23:22
+info   SELECT * FROM service  20.09.2012 20:25
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  20.09.2012 20:25
+info   SELECT * FROM client  20.09.2012 20:25
+info   SELECT * FROM service  20.09.2012 20:27
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  20.09.2012 20:27
+info   SELECT * FROM client  20.09.2012 20:27
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  20.09.2012 20:27
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  20.09.2012 20:27
+info   SELECT * FROM client  20.09.2012 20:27
+info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  20.09.2012 20:27
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  20.09.2012 20:27
+info   SELECT * FROM client  20.09.2012 20:27
