@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 21:14:08
+<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 23:17:00
          compiled from "F:/www/sibnii/private/smartytemplates/templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2461950630db05ab2a9-80588545%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2224050632a7c37b470-09325951%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ef37665bcc80d87a3c42929057f30b93e28d0abf' => 
     array (
       0 => 'F:/www/sibnii/private/smartytemplates/templates/index.tpl',
-      1 => 1348668845,
+      1 => 1348676217,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2461950630db05ab2a9-80588545',
+  'nocache_hash' => '2224050632a7c37b470-09325951',
   'function' => 
   array (
   ),
@@ -109,21 +109,21 @@ $_smarty_tpl->decodeProperties(array (
         <h2>Новости</h2>
 
     <?php if (isset($_smarty_tpl->getVariable('news_list_main',null,true,false)->value)&&$_smarty_tpl->getVariable('news_list_main')->value!=false){?>
-        <?php  $_smarty_tpl->tpl_vars['news'] = new Smarty_Variable;
+        <?php  $_smarty_tpl->tpl_vars['news_main'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('news_list_main')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 if ($_smarty_tpl->_count($_from) > 0){
-    foreach ($_from as $_smarty_tpl->tpl_vars['news']->key => $_smarty_tpl->tpl_vars['news']->value){
+    foreach ($_from as $_smarty_tpl->tpl_vars['news_main']->key => $_smarty_tpl->tpl_vars['news_main']->value){
 ?>
             <div class="item">
-                <p class="date"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['news']->value['date'],"%d.%m.%Y");?>
+                <p class="date"><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['news_main']->value['date'],"%d.%m.%Y");?>
 </p>
 
-                <p class="title"><?php echo $_smarty_tpl->tpl_vars['news']->value['title'];?>
+                <p class="title"><?php echo $_smarty_tpl->tpl_vars['news_main']->value['title'];?>
 </p>
 
                 <p class="descript"><a href="<?php echo $_smarty_tpl->getVariable('siteurl')->value;?>
-?page=news&action=view_news&id=<?php echo $_smarty_tpl->tpl_vars['news']->value['id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['news']->value['short_text'];?>
+?page=news&action=view_news&id=<?php echo $_smarty_tpl->tpl_vars['news_main']->value['id'];?>
+"><?php echo $_smarty_tpl->tpl_vars['news_main']->value['short_text'];?>
 </a></p>
 
                 <div class="arr">&rarr;</div>

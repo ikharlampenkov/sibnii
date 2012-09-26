@@ -88,13 +88,13 @@
         <h2>Новости</h2>
 
     {if isset($news_list_main) && $news_list_main != false}
-        {foreach from=$news_list_main item=news}
+        {foreach from=$news_list_main item=news_main}
             <div class="item">
-                <p class="date">{$news.date|date_format:"%d.%m.%Y"}</p>
+                <p class="date">{$news_main.date|date_format:"%d.%m.%Y"}</p>
 
-                <p class="title">{$news.title}</p>
+                <p class="title">{$news_main.title}</p>
 
-                <p class="descript"><a href="{$siteurl}?page=news&action=view_news&id={$news.id}">{$news.short_text}</a></p>
+                <p class="descript"><a href="{$siteurl}?page=news&action=view_news&id={$news_main.id}">{$news_main.short_text}</a></p>
 
                 <div class="arr">&rarr;</div>
             </div>

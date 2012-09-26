@@ -2326,3 +2326,68 @@ info   SELECT * FROM client  26.09.2012 22:05
 info   SELECT password FROM user WHERE login="admin"  26.09.2012 22:11
 info   SELECT * FROM license  26.09.2012 22:11
 info   SELECT * FROM client  26.09.2012 22:11
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 23:14
+info   SELECT * FROM service  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=4  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=4  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:14
+info   SELECT * FROM client  26.09.2012 23:14
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:15
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:15
+info   SELECT * FROM client  26.09.2012 23:15
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:15
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:15
+info   SELECT * FROM client  26.09.2012 23:15
+info   SELECT * FROM news WHERE id=4  26.09.2012 23:15
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:15
+info   SELECT * FROM client  26.09.2012 23:15
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:15
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:15
+info   SELECT * FROM client  26.09.2012 23:15
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:16
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:16
+info   SELECT * FROM client  26.09.2012 23:16
+info   SELECT * FROM news WHERE id=4  26.09.2012 23:16
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:16
+info   SELECT * FROM client  26.09.2012 23:16
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:16
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:16
+info   SELECT * FROM client  26.09.2012 23:16
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:17
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:17
+info   SELECT * FROM client  26.09.2012 23:17
+info   SELECT * FROM news WHERE id=4  26.09.2012 23:17
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:17
+info   SELECT * FROM client  26.09.2012 23:17
+info   SELECT * FROM news WHERE id=3  26.09.2012 23:17
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 23:17
+info   SELECT * FROM client  26.09.2012 23:17
