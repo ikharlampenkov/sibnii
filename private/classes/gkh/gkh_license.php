@@ -35,6 +35,7 @@ class gkh_license extends gkh {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['img']);
                     $res['img_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result;
             } else

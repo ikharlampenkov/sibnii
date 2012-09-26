@@ -65,6 +65,7 @@ class gkh_news extends gkh
             $sql = 'SELECT * FROM news WHERE id=' . (int)$id;
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
+                $result[0]['full_text'] = stripcslashes(stripslashes($result[0]['full_text']));
                 return $result[0];
             } else
                 return false;

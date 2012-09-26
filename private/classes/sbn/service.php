@@ -14,11 +14,13 @@ ENGINE = InnoDB
  *
  * @author Administrator
  */
-class service extends sbn {
+class service extends sbn
+{
 
     //private $_img;
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
 
         //global $__cfg;
@@ -27,11 +29,15 @@ class service extends sbn {
 
     }
 
-    public function getAllService() {
+    public function getAllService()
+    {
         try {
             $sql = 'SELECT * FROM service';
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
+                foreach ($result as &$res) {
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
+                }
                 return $result;
             } else
                 return false;
@@ -40,13 +46,17 @@ class service extends sbn {
         }
     }
 
-    public function getServiceByProject($id) {
+    public function getServiceByProject($id)
+    {
         try {
             $sql = 'SELECT service.id, service.title, service.description
                     FROM service, project_service
                     WHERE service.id=project_service.service_id AND project_service.project_id=' . $id;
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
             if (isset($result[0])) {
+                foreach ($result as &$res) {
+                                    $res['description'] = stripcslashes(stripslashes($res['description']));
+                                }
                 return $result;
             } else
                 return false;
@@ -54,8 +64,9 @@ class service extends sbn {
             simo_exception::registrMsg($e, $this->_debug);
         }
     }
-    
-    public function getServiceArrayByProject($id) {
+
+    public function getServiceArrayByProject($id)
+    {
         try {
             $sql = 'SELECT service.id 
                     FROM service, project_service
@@ -64,7 +75,7 @@ class service extends sbn {
             if (isset($result[0])) {
                 $retArray = array();
                 foreach ($result as $res) {
-                   $retArray[] = $res['id']; 
+                    $retArray[] = $res['id'];
                 }
                 return $retArray;
             } else
@@ -74,7 +85,8 @@ class service extends sbn {
         }
     }
 
-    public function getService($id) {
+    public function getService($id)
+    {
         try {
             $sql = 'SELECT * FROM service WHERE id=' . (int)$id;
             $result = $this->_db->query($sql, simo_db::QUERY_MOD_ASSOC);
@@ -88,7 +100,8 @@ class service extends sbn {
         }
     }
 
-    public function addService($data) {
+    public function addService($data)
+    {
         try {
             $data = $this->_db->prepareArray($data);
             $sql = 'INSERT INTO service(title, description)
@@ -99,7 +112,8 @@ class service extends sbn {
         }
     }
 
-    public function updateService($id, $data) {
+    public function updateService($id, $data)
+    {
         try {
             $data = $this->_db->prepareArray($data);
 
@@ -112,7 +126,8 @@ class service extends sbn {
         }
     }
 
-    public function deleteService($id) {
+    public function deleteService($id)
+    {
         try {
             $sql = 'DELETE FROM service WHERE id=' . (int)$id;
             $this->_db->query($sql);
@@ -121,7 +136,8 @@ class service extends sbn {
         }
     }
 
-    public function __destruct() {
+    public function __destruct()
+    {
         parent::__destruct();
     }
 

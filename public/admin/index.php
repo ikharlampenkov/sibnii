@@ -261,7 +261,8 @@ if ($page == 'license') {
             exit;
         }
 
-        $o_smarty->assign('txt', 'Добавить лицензию');
+        $o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', ''));
+		$o_smarty->assign('txt', 'Добавить лицензию');
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
         if (isset($_POST['data'])) {
@@ -269,9 +270,12 @@ if ($page == 'license') {
             simo_functions::chLocation('?page=' . $page);
             exit;
         }
-
+		
+		$license =  $o_license->getLicense($_GET['id']);
+		
         $o_smarty->assign('txt', 'Редактировать лицензию');
-        $o_smarty->assign('license', $o_license->getLicense($_GET['id']));
+		$o_smarty->assign('ckeditor', $CKEditor->editor('data[description]', $license['description']));
+        $o_smarty->assign('license', $license);
     } elseif ($action == 'del') {
         $o_license->deleteLicense($_GET['id']);
         simo_functions::chLocation('?page=' . $page);
@@ -296,6 +300,7 @@ if ($page == 'personal') {
         }
 
         $o_smarty->assign('txt', 'Добавить работника');
+		$o_smarty->assign('ckeditor', $CKEditor->editor('data[contact]', ''));
     } elseif ($action == 'edit' && isset($_GET['id'])) {
 
         if (isset($_POST['data'])) {
@@ -303,9 +308,12 @@ if ($page == 'personal') {
             simo_functions::chLocation('?page=' . $page);
             exit;
         }
+		
+		$personal = $o_personal->getPersonal($_GET['id']);
 
         $o_smarty->assign('txt', 'Редактировать работника');
         $o_smarty->assign('personal', $o_personal->getPersonal($_GET['id']));
+		$o_smarty->assign('ckeditor', $CKEditor->editor('data[contact]', $personal['contact']));
     } elseif ($action == 'del') {
         $o_personal->deletePersonal($_GET['id']);
         simo_functions::chLocation('?page=' . $page);
@@ -354,6 +362,9 @@ if ($page == '') {
     $o_service = new service();
     $o_smarty->assign('service_list', $o_service->getAllService());
 }
+
+$o_client = new client();
+$o_smarty->assign('client_list_main', $o_client->getAllClient());
 
 $o_smarty->display('admin/index.tpl');
 ?>

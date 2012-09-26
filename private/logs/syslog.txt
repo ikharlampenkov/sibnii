@@ -2209,3 +2209,120 @@ info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  26.09.2012 2
 info   SELECT * FROM news
                     ORDER BY date DESC LIMIT 5  26.09.2012 21:19
 info   SELECT * FROM client  26.09.2012 21:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  26.09.2012 21:21
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:21
+info   SELECT * FROM client  26.09.2012 21:21
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  26.09.2012 21:27
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:27
+info   SELECT * FROM client  26.09.2012 21:27
+info   SELECT login, password, role FROM user WHERE login="admin"  26.09.2012 21:30
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:30
+info   SELECT * FROM service  26.09.2012 21:30
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:30
+info   SELECT * FROM service  26.09.2012 21:30
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:30
+info   SELECT * FROM content_page  26.09.2012 21:30
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:33
+info   SELECT * FROM content_page  26.09.2012 21:33
+info   SELECT * FROM client  26.09.2012 21:33
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:41
+info   SELECT * FROM content_page WHERE id=1 OR page_title="1"  26.09.2012 21:41
+info   SELECT * FROM client  26.09.2012 21:41
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   UPDATE content_page 
+                    SET page_title="about", title="О компании", 
+                        content="<p style=\"text-align: center\">\r\n	<span style=\"font-size: 14px;\"><strong><img alt=\"\" src=\"/ckfinder/userfiles/images/%D1%84%D0%BE%D1%82%D0%BE%20%D0%B3%D0%B5%D0%BD%20%D0%B4%D0%B8%D1%80%D0%B5%D0%BA%D1%82%D0%BE%D1%80.JPG\" style=\"float: left; margin-top: 5px; margin-bottom: 5px; height: 225px; width: 400px; margin-left: 15px; margin-right: 15px\" /><span style=\"font-size:16px;\">Уважаемые коллеги и партнеры!</span></strong></span></p>\r\n<p style=\"text-align: justify;\">\r\n	<span style=\"color: rgb(0, 0, 205);\"><strong>&nbsp;&nbsp;&nbsp;&nbsp; ООО &laquo;СибНИИуглепроект&raquo; </strong></span>- современный многопрофильный проектный институт, занимающийся комплексным проектированием промышленных и жилых объектов капитального строительства.</p>\r\n<p style=\"text-align: justify;\">\r\n	&nbsp;&nbsp;&nbsp;&nbsp; Основным направлением деятельности института является разработка проектной документации для строительства, реконструкции и технического перевооружения предприятий угольной промышленности, а также железнодорожного и автомобильного транспорта.</p>\r\n<p style=\"text-align: justify;\">\r\n	&nbsp;&nbsp;&nbsp;&nbsp; <span style=\"color: rgb(0, 0, 205);\"><strong>ООО &laquo;СибНИИуглепроект&raquo; </strong></span>осуществляет помощь заказчику на всех этапах инвестиционного проекта &ndash; предпроектная подготовка и сбор исходных данных, технико-экономическое обоснование, разработка основных концептуальных направлений, выполнение проектной, рабочей и сметной документации, разработка инженерно-технических мероприятий, документации природоохранного назначения, авторский надзор при ведении строительства и монтажа. Оказывает инжиниринговые услуги в области экологического проектирования, рационального использования и охраны недр.</p>\r\n<p style=\"text-align: justify;\">\r\n	&nbsp;&nbsp;&nbsp;&nbsp; Главным богатством нашего института были и остаются люди, сотрудники института, высококвалифицированные специалисты, стаж которых составляет от&nbsp;5 до 30 лет. Инженерный состав института, отлично владеющий вопросами проектирования промышленных и жилых объектов капитального строительства, знающий угольное и строительное производство. <span style=\"color: rgb(0, 0, 205);\"><strong>ООО &laquo;СибНИИуглепроект&raquo;</strong></span> - это сплоченный коллектив профессионалов в различных сферах деятельности, имеющий современные автоматизированные программные комплексы, техническую и информационную базу.</p>\r\n<p style=\"text-align: right;\">\r\n	<strong>С уважением, Генеральный директор</strong></p>\r\n<p style=\"text-align: right;\">\r\n	<strong>Бурков Алексей Владимирович</strong></p>\r\n<p>\r\n	&nbsp;</p>\r\n" 
+                    WHERE id=1  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM content_page  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM content_page WHERE id=1 OR page_title="1"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM content_page  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM user  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client WHERE id=2  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client WHERE id=3  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   UPDATE client
+                    SET title="ШУБ", description="<p>\r\n	Добыча угля</p>\r\n"
+                    WHERE id=3  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client WHERE id=12  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM service  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM service WHERE id=1  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT * FROM client  26.09.2012 21:42
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:43
+info   SELECT * FROM license  26.09.2012 21:43
+info   SELECT * FROM client  26.09.2012 21:43
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:43
+info   SELECT * FROM license WHERE id=8  26.09.2012 21:43
+info   SELECT * FROM client  26.09.2012 21:43
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:44
+info   SELECT * FROM license WHERE id=8  26.09.2012 21:44
+info   SELECT * FROM client  26.09.2012 21:44
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:49
+info   SELECT * FROM license WHERE id=8  26.09.2012 21:49
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:50
+info   UPDATE license
+                    SET description="<p style=\"text-align: justify\">\r\n	<strong>СВИДЕТЕЛЬСТВО</strong></p>\r\n<p style=\"text-align: justify\">\r\n	<span style=\"font-size:14px;\">о допуске к работам по подготовке проектной документации, которые оказывают влияние на безопасность объектов капитального строительства <strong>№7261 от 17.11.2011 г.</strong></span></p>\r\n"
+                    WHERE id=8  26.09.2012 21:50
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:50
+info   SELECT * FROM license  26.09.2012 21:50
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:52
+info   SELECT * FROM license  26.09.2012 21:52
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:52
+info   SELECT * FROM license WHERE id=8  26.09.2012 21:52
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:52
+info   UPDATE license
+                    SET description="<p style=\"text-align: justify\">\r\n	<strong>СВИДЕТЕЛЬСТВО</strong></p>\r\n<p style=\"text-align: justify\">\r\n	<span style=\"font-size:14px;\">о допуске к работам по подготовке проектной документации, которые оказывают влияние на безопасность объектов капитального строительства <strong>№7261 от 17.11.2011 г.</strong></span></p>\r\n"
+                    WHERE id=8  26.09.2012 21:52
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:52
+info   SELECT * FROM license  26.09.2012 21:52
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:54
+info   SELECT * FROM license  26.09.2012 21:54
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 21:58
+info   SELECT * FROM license  26.09.2012 21:58
+info   SELECT * FROM client  26.09.2012 21:58
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 22:00
+info   SELECT * FROM personal  26.09.2012 22:00
+info   SELECT * FROM client  26.09.2012 22:00
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 22:00
+info   SELECT * FROM personal WHERE id=4  26.09.2012 22:00
+info   SELECT * FROM personal WHERE id=4  26.09.2012 22:00
+info   SELECT * FROM client  26.09.2012 22:00
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 22:05
+info   SELECT * FROM project  26.09.2012 22:05
+info   SELECT * FROM client  26.09.2012 22:05
+info   SELECT password FROM user WHERE login="admin"  26.09.2012 22:11
+info   SELECT * FROM license  26.09.2012 22:11
+info   SELECT * FROM client  26.09.2012 22:11

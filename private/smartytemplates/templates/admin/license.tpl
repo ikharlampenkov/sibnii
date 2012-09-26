@@ -7,13 +7,13 @@
     <form action="?page={$page}&action={$action}{if $action=="edit"}&id={$license.id}{/if}" method="post" enctype="multipart/form-data">
         <table width="100%" cellpadding="5" cellspacing="2" style="font-size:14px">
             <tr>
-                <td class="pem">Лицензия</td>
+                <td class="pem" width="150">Лицензия</td>
                 <td class="pem">{if !empty($license.img)}<img src="{$siteurl}files/{$license.img_prew}" /><br />
                     &nbsp;<a href="?page={$page}&action=del_file&id={$license.id}&field=img">удалить</a><br />{/if}
                     <input type="file"  name="img" /></td>
             </tr>
             <tr class="pem">
-                <td width="200">Описание</td>
+                <td>Описание</td>
                 <td>{$ckeditor}{*<textarea name="data[description]">{$license.description}</textarea>*}</td>
             </tr>
         </table>

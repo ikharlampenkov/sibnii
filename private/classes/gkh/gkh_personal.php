@@ -57,6 +57,7 @@ class gkh_personal extends gkh {
             if (isset($result[0])) {
                 $this->_img->setName($result[0]['foto']);
                 $result[0]['foto_prew'] = $this->_img->getPreview();
+                $result[0]['contact'] = stripcslashes(stripslashes($result[0]['contact']));
                 return $result[0];
             } else
                 return false;
