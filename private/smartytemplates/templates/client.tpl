@@ -7,7 +7,7 @@
         </tr>
     </table> 
 
-        <div>{$client.description|nl2br}</div>  
+        <div>{$client.description}</div>
         
         {if $project_list!==false}
             <h4>Проекты</h4>

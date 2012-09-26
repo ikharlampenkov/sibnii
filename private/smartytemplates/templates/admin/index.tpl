@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>{$title}</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+	<title>{$title}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="/css/admin.css"/>
@@ -124,7 +125,7 @@
 
 </div>
 
-<div id="content">
+<div id="content" style="width: 90%;">
 
     <table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" align="center">
         <tr>

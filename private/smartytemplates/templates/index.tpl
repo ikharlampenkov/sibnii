@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>{$title}</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<title>{$title}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
 
@@ -10,10 +11,7 @@
     <script type="text/javascript" src="/js/scripts.js"></script>
 
     <script type="text/javascript" src="/js/swfobject.js"></script>
-    <script type='text/javascript'>
-        swfobject.embedSWF("/images/banner.swf", "swfobject", "562", "141", "9.0.0", false, { link1:"" }, { wmode:"transparent" }, { });
-
-    </script>
+    <script type="text/javascript" src="/js/banner.js"></script>
     <!--[if lte IE 6]>
     <script src="js/png.js"></script>
     <script>DD_belatedPNG.fix('div, a, img, span');</script>
@@ -28,36 +26,25 @@
     <![endif]-->
 
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.4.pack.js"></script>
+    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#clients_slider').slides({
+				preload: true
+				//generateNextPrev: true
+			});
+		});
+	</script>
     <link href="/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            $("a.group_image").fancybox({
-                'padding':10,
-                'autoScale':false,
-                'transitionIn':'elastic',
-                'transitionOut':'elastic',
-                'speedIn':600,
-                'speedOut':200,
-                'overlayShow':true,
-                'overlayOpacity':0.8,
-                'cyclic':true,
-                'scrolling':'auto'
-            });
-
-        });
-
-
-    </script>
+	<script type="text/javascript" src="/js/fancybox.js"></script>
 
 </head>
 <body>
 <div id="triangl_fon"></div>
 <div id="header">
-    <div class="logo"><a href="/"></a></div>
+    <div class="logo"><a href="/"><img src="/images/logo.jpg" width=100% height=100%/></a></div>
 
     <div id="mainmenu">
         <ul class="menu">
@@ -79,7 +66,7 @@
     </div>
 
     <div class="phone">
-        <div class="phone1">
+        <!-- <div class="phone1">
             <p class="code">8 (3842)</p> 45-35-86
             <div class="phone_icon"></div>
             <p>телефон для справок</p>
@@ -88,8 +75,9 @@
             <p class="code">8 (3842)</p> 45-35-82
             <div class="phone_icon_fax"></div>
             <p>факс</p>
-        </div>
-        <p class="mail"><a href="mailto:info@sibnii.pro">info@sibnii.pro</a></p>
+        </div> -->
+		<div class="phone2"><a href="mailto:info@sibnii.pro">info@sibnii.pro</a></div>
+		<p>Адрес для обратной связи</p>
     </div>
     <div class="swf">
         <div id="swfobject"></div>
@@ -140,8 +128,8 @@
                 {foreach from=$gallery item=img}
                     <li>
                         <div class="sliderim">
-                            <a class="group_image" rel="group" href="{$siteurl}files/{$img.img}" title="{$img.description}">
-                                <img class="photo_thumb_img" src="{$siteurl}files/{$img.img_prew}" alt="{$img.description}" border="0" height="120"/>
+                            <a class="group_image" rel="group" href="/files/{$img.img}" title="{$img.description}">
+                                <img class="photo_thumb_img" src="/files/{$img.img_prew}" alt="{$img.description}" border="0" height="120"/>
                             </a>
 
                         </div>
@@ -179,13 +167,14 @@
 
 <div class="pad"></div>
 <div id="footer">
-    <div class="copyr"> &copy; {$smarty.now|date_format:"%Y"}, ООО "СибНИИуглероект"</div>
+    <div class="copyr">{$smarty.now|date_format:"%Y"} &copy;  ООО "СибНИИуглепроект"</div>
     <div id="footmenu">
         <ul class="menu">
             <li><a href="?page=content_page&title=contacts" {if $page=='content_page' && $conpage_title=='contacts'}class="selected"{/if}>Контакты</a></li>
             <li><a href="?page=content_page&title=about" {if $page=='content_page' && $conpage_title=='about'}class="selected"{/if}>Компания</a></li>
             <li><a href="?page=service" {if $page=='service'}class="selected"{/if}>Услуги</a></li>
             <li><a href="?page=project" {if $page=='project'}class="selected"{/if}>Проекты</a></li>
+			<li><a href="?page=buklet" class="selected">Буклет</a></li>
         </ul>
     </div>
 </div>

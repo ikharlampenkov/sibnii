@@ -8,13 +8,13 @@
         <table width="100%" cellpadding="5" cellspacing="2" style="font-size:14px">
             <tr>
                 <td class="pem">Лицензия</td>
-                <td class="pem">{if !empty($license.img)}<img src="{$siteurl}temp_files/{$license.img}" /><br />
+                <td class="pem">{if !empty($license.img)}<img src="{$siteurl}files/{$license.img_prew}" /><br />
                     &nbsp;<a href="?page={$page}&action=del_file&id={$license.id}&field=img">удалить</a><br />{/if}
                     <input type="file"  name="img" /></td>
             </tr>
             <tr class="pem">
                 <td width="200">Описание</td>
-                <td><textarea name="data[description]">{$license.description}</textarea></td>
+                <td>{$ckeditor}{*<textarea name="data[description]">{$license.description}</textarea>*}</td>
             </tr>
         </table>
         <input id="save" name="save" type="submit" value="Сохранить" />

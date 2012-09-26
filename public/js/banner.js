@@ -1,0 +1,1 @@
+swfobject.embedSWF("/images/banner.swf", "swfobject", "800", "196", "9.0.0", false, { link1:"" }, { wmode:"transparent" }, { });

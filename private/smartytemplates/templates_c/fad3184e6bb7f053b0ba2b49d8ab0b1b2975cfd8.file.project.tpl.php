@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-06-17 23:22:40
+<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 21:18:29
          compiled from "F:/www/sibnii/private/smartytemplates/templates/project.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:302334fde04507bf810-60795052%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:667550630eb5dfc788-16731567%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'fad3184e6bb7f053b0ba2b49d8ab0b1b2975cfd8' => 
     array (
       0 => 'F:/www/sibnii/private/smartytemplates/templates/project.tpl',
-      1 => 1339943392,
+      1 => 1348664985,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '302334fde04507bf810-60795052',
+  'nocache_hash' => '667550630eb5dfc788-16731567',
   'function' => 
   array (
   ),
@@ -25,7 +25,7 @@ $_smarty_tpl->decodeProperties(array (
 <p>Клиент: <?php echo $_smarty_tpl->getVariable('client')->value['title'];?>
 </p>
 
-<p><?php echo nl2br($_smarty_tpl->getVariable('project')->value['description']);?>
+<p><?php echo $_smarty_tpl->getVariable('project')->value['description'];?>
 </p>
 
     <?php }else{ ?>

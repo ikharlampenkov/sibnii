@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-06-17 23:22:49
+<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 21:19:26
          compiled from "F:/www/sibnii/private/smartytemplates/templates/content_page.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:58964fde04594e2f98-72444402%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1812950630eee31cdb2-72077871%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'de7e1ba33ed486abac4ac3b004ba607e2b040dde' => 
     array (
       0 => 'F:/www/sibnii/private/smartytemplates/templates/content_page.tpl',
-      1 => 1339943641,
+      1 => 1348664985,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '58964fde04594e2f98-72444402',
+  'nocache_hash' => '1812950630eee31cdb2-72077871',
   'function' => 
   array (
   ),
@@ -20,5 +20,5 @@ $_smarty_tpl->decodeProperties(array (
 <h2><?php echo $_smarty_tpl->getVariable('conpage')->value['title'];?>
 </h2>
 
-<p><?php echo nl2br($_smarty_tpl->getVariable('conpage')->value['content']);?>
+<p><?php echo $_smarty_tpl->getVariable('conpage')->value['content'];?>
 </p>

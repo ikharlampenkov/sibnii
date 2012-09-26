@@ -2126,3 +2126,86 @@ info   SELECT * FROM content_page WHERE id=0 OR page_title="contacts"  20.09.201
 info   SELECT * FROM news
                     ORDER BY date DESC LIMIT 5  20.09.2012 20:27
 info   SELECT * FROM client  20.09.2012 20:27
+info   SELECT * FROM service  26.09.2012 20:28
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 20:28
+info   SELECT * FROM client  26.09.2012 20:28
+info   SELECT * FROM service  26.09.2012 20:37
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 20:37
+info   SELECT * FROM client  26.09.2012 20:37
+info   SELECT * FROM service  26.09.2012 20:41
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 20:41
+info   SELECT * FROM client  26.09.2012 20:41
+info   SELECT * FROM service  26.09.2012 21:13
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:13
+info   SELECT * FROM client  26.09.2012 21:13
+info   SELECT * FROM service  26.09.2012 21:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:14
+info   SELECT * FROM client  26.09.2012 21:14
+info   SELECT * FROM service  26.09.2012 21:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:14
+info   SELECT * FROM client  26.09.2012 21:14
+info   SELECT * FROM service  26.09.2012 21:17
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:17
+info   SELECT * FROM client  26.09.2012 21:17
+info   SELECT * FROM service WHERE id=1  26.09.2012 21:18
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  26.09.2012 21:18
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  26.09.2012 21:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:18
+info   SELECT * FROM client  26.09.2012 21:18
+info   SELECT * FROM project WHERE id=1  26.09.2012 21:18
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  26.09.2012 21:18
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  26.09.2012 21:18
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  26.09.2012 21:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:18
+info   SELECT * FROM client  26.09.2012 21:18
+info   SELECT * FROM service  26.09.2012 21:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:18
+info   SELECT * FROM client  26.09.2012 21:18
+info   SELECT * FROM service WHERE id=6  26.09.2012 21:18
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=6  26.09.2012 21:18
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=6  26.09.2012 21:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:18
+info   SELECT * FROM client  26.09.2012 21:18
+info   SELECT * FROM service  26.09.2012 21:18
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:18
+info   SELECT * FROM client  26.09.2012 21:18
+info   SELECT * FROM content_page WHERE id=0 OR page_title="naprav"  26.09.2012 21:19
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:19
+info   SELECT * FROM client  26.09.2012 21:19
+info   SELECT * FROM content_page WHERE id=0 OR page_title="about"  26.09.2012 21:19
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  26.09.2012 21:19
+info   SELECT * FROM client  26.09.2012 21:19

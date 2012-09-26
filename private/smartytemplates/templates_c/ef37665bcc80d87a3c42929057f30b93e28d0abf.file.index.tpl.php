@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-06-17 23:22:00
+<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 21:14:08
          compiled from "F:/www/sibnii/private/smartytemplates/templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:93624fde0428d7ddc9-44764847%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2461950630db05ab2a9-80588545%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ef37665bcc80d87a3c42929057f30b93e28d0abf' => 
     array (
       0 => 'F:/www/sibnii/private/smartytemplates/templates/index.tpl',
-      1 => 1339947193,
+      1 => 1348668845,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '93624fde0428d7ddc9-44764847',
+  'nocache_hash' => '2461950630db05ab2a9-80588545',
   'function' => 
   array (
   ),
@@ -22,7 +22,8 @@ $_smarty_tpl->decodeProperties(array (
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title><?php echo $_smarty_tpl->getVariable('title')->value;?>
+    <link rel="shortcut icon" href="favicon.ico"/>
+	<title><?php echo $_smarty_tpl->getVariable('title')->value;?>
 </title>
 
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
@@ -31,10 +32,7 @@ $_smarty_tpl->decodeProperties(array (
     <script type="text/javascript" src="/js/scripts.js"></script>
 
     <script type="text/javascript" src="/js/swfobject.js"></script>
-    <script type='text/javascript'>
-        swfobject.embedSWF("/images/banner.swf", "swfobject", "562", "141", "9.0.0", false, { link1:"" }, { wmode:"transparent" }, { });
-
-    </script>
+    <script type="text/javascript" src="/js/banner.js"></script>
     <!--[if lte IE 6]>
     <script src="js/png.js"></script>
     <script>DD_belatedPNG.fix('div, a, img, span');</script>
@@ -49,36 +47,25 @@ $_smarty_tpl->decodeProperties(array (
     <![endif]-->
 
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.4.pack.js"></script>
+    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#clients_slider').slides({
+				preload: true
+				//generateNextPrev: true
+			});
+		});
+	</script>
     <link href="/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            $("a.group_image").fancybox({
-                'padding':10,
-                'autoScale':false,
-                'transitionIn':'elastic',
-                'transitionOut':'elastic',
-                'speedIn':600,
-                'speedOut':200,
-                'overlayShow':true,
-                'overlayOpacity':0.8,
-                'cyclic':true,
-                'scrolling':'auto'
-            });
-
-        });
-
-
-    </script>
+	<script type="text/javascript" src="/js/fancybox.js"></script>
 
 </head>
 <body>
 <div id="triangl_fon"></div>
 <div id="header">
-    <div class="logo"><a href="/"></a></div>
+    <div class="logo"><a href="/"><img src="/images/logo.jpg" width=100% height=100%/></a></div>
 
     <div id="mainmenu">
         <ul class="menu">
@@ -100,7 +87,7 @@ $_smarty_tpl->decodeProperties(array (
     </div>
 
     <div class="phone">
-        <div class="phone1">
+        <!-- <div class="phone1">
             <p class="code">8 (3842)</p> 45-35-86
             <div class="phone_icon"></div>
             <p>телефон для справок</p>
@@ -109,8 +96,9 @@ $_smarty_tpl->decodeProperties(array (
             <p class="code">8 (3842)</p> 45-35-82
             <div class="phone_icon_fax"></div>
             <p>факс</p>
-        </div>
-        <p class="mail"><a href="mailto:info@sibnii.pro">info@sibnii.pro</a></p>
+        </div> -->
+		<div class="phone2"><a href="mailto:info@sibnii.pro">info@sibnii.pro</a></div>
+		<p>Адрес для обратной связи</p>
     </div>
     <div class="swf">
         <div id="swfobject"></div>
@@ -176,12 +164,10 @@ if ($_smarty_tpl->_count($_from) > 0){
 ?>
                     <li>
                         <div class="sliderim">
-                            <a class="group_image" rel="group" href="<?php echo $_smarty_tpl->getVariable('siteurl')->value;?>
-files/<?php echo $_smarty_tpl->tpl_vars['img']->value['img'];?>
+                            <a class="group_image" rel="group" href="/files/<?php echo $_smarty_tpl->tpl_vars['img']->value['img'];?>
 " title="<?php echo $_smarty_tpl->tpl_vars['img']->value['description'];?>
 ">
-                                <img class="photo_thumb_img" src="<?php echo $_smarty_tpl->getVariable('siteurl')->value;?>
-files/<?php echo $_smarty_tpl->tpl_vars['img']->value['img_prew'];?>
+                                <img class="photo_thumb_img" src="/files/<?php echo $_smarty_tpl->tpl_vars['img']->value['img_prew'];?>
 " alt="<?php echo $_smarty_tpl->tpl_vars['img']->value['description'];?>
 " border="0" height="120"/>
                             </a>
@@ -228,14 +214,15 @@ files/<?php echo $_smarty_tpl->tpl_vars['client']->value['logo_prew'];?>
 
 <div class="pad"></div>
 <div id="footer">
-    <div class="copyr"> &copy; <?php echo smarty_modifier_date_format(time(),"%Y");?>
-, ООО "СибНИИуглероект"</div>
+    <div class="copyr"><?php echo smarty_modifier_date_format(time(),"%Y");?>
+ &copy;  ООО "СибНИИуглепроект"</div>
     <div id="footmenu">
         <ul class="menu">
             <li><a href="?page=content_page&title=contacts" <?php if ($_smarty_tpl->getVariable('page')->value=='content_page'&&$_smarty_tpl->getVariable('conpage_title')->value=='contacts'){?>class="selected"<?php }?>>Контакты</a></li>
             <li><a href="?page=content_page&title=about" <?php if ($_smarty_tpl->getVariable('page')->value=='content_page'&&$_smarty_tpl->getVariable('conpage_title')->value=='about'){?>class="selected"<?php }?>>Компания</a></li>
             <li><a href="?page=service" <?php if ($_smarty_tpl->getVariable('page')->value=='service'){?>class="selected"<?php }?>>Услуги</a></li>
             <li><a href="?page=project" <?php if ($_smarty_tpl->getVariable('page')->value=='project'){?>class="selected"<?php }?>>Проекты</a></li>
+			<li><a href="?page=buklet" class="selected">Буклет</a></li>
         </ul>
     </div>
 </div>

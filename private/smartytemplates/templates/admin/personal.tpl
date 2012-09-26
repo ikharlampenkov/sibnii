@@ -27,7 +27,7 @@
         </tr>
         <tr class="ttovar">
             <td>Контакты</td>
-            <td><textarea name="data[contact]" />{$personal.contact}</textarea></td>
+            <td>{$ckeditor}{*<textarea name="data[contact]" />{$personal.contact}</textarea>*}</td>
         </tr>
     </table>
     <input id="save" name="save" type="submit" value="Сохранить" />

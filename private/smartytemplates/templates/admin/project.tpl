@@ -8,7 +8,7 @@
     <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$project.id}{/if}" method="post">
         <table width="100%">
             <tr>
-                <td class="ttovar">Название</td>
+                <td class="ttovar" style="width: 100px;">Название</td>
                 <td class="ttovar"><input name="data[title]" value="{$project.title}" /></td>
             </tr>
             <tr>
@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <td class="ttovar">Текст</td>
-                <td class="ttovar"><textarea name="data[description]">{$project.description}</textarea></td>
+                <td class="ttovar">{$ckeditor}{*<textarea name="data[description]">{$project.description}</textarea>*}</td>
             </tr>
             <tr>
                 <td class="ttovar">Завершeн</td>
