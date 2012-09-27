@@ -5,7 +5,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$project.id}{/if}" method="post">
+    <form action="/admin/?page={$page}&action={$action}{if $action=='edit'}&id={$project.id}{/if}" method="post">
         <table width="100%">
             <tr>
                 <td class="ttovar" style="width: 100px;">Название</td>
@@ -36,7 +36,7 @@
     
     <h1>Услуги проекта {$project.title}</h1>
     
-    <form action="?page={$page}&action={$action}&id={$project.id}" method="post">
+    <form action="/admin/?page={$page}&action={$action}&id={$project.id}" method="post">
     {if $service_list!==false}
         <table width="100%">
             {foreach from=$service_list item=service}
@@ -58,7 +58,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action=photo_view&id={$project.id}&subaction={$subaction}{if $subaction=='edit'}&img_id={$img.id}{/if}" method="post" enctype="multipart/form-data">
+    <form action="/admin/?page={$page}&action=photo_view&id={$project.id}&subaction={$subaction}{if $subaction=='edit'}&img_id={$img.id}{/if}" method="post" enctype="multipart/form-data">
         <table width="100%">
             <tr>
                 <td class="ttovar">Описание</td>
@@ -83,14 +83,14 @@
                 <tr>
                     <td><img src="{$siteurl}files/{$img.img_prew}"/></td>
                     <td class="ttovar">{$img.description}</td>
-                    <td class="tedit"><a href="?page={$page}&action=photo_view&id={$project.id}&subaction=edit&img_id={$img.id}" class="tedit">редактировать</a><br/><br/>
-                        <a href="?page={$page}&action=photo_view&id={$project.id}&subaction=del&img_id={$img.id}" class="tdel">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=photo_view&id={$project.id}&subaction=edit&img_id={$img.id}" class="tedit">редактировать</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=photo_view&id={$project.id}&subaction=del&img_id={$img.id}" class="tdel">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
-    <a href="?page={$page}&action=photo_view&id={$project.id}&subaction=add">добавить</a>
+    <a href="/admin/?page={$page}&action=photo_view&id={$project.id}&subaction=add">добавить</a>
 
 {/if}
     
@@ -102,16 +102,16 @@
             {foreach from=$project_list item=project}
                 <tr>
                     <td class="ttovar">{$project.title}</td>
-                    <td class="tedit"><a href="?page={$page}&action=service&id={$project.id}" class="tedit">услуги</a><br/><br/>
-                        <a href="?page={$page}&action=photo_view&id={$project.id}" class="tedit">фотографии</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=service&id={$project.id}" class="tedit">услуги</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=photo_view&id={$project.id}" class="tedit">фотографии</a>
                     </td>
-                    <td class="tedit"><a href="?page={$page}&action=edit&id={$project.id}" class="tedit">редактировать</a><br/><br/>
-                        <a href="?page={$page}&action=del&id={$project.id}" class="tdel">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=edit&id={$project.id}" class="tedit">редактировать</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=del&id={$project.id}" class="tdel">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
-    <a href="?page={$page}&action=add">добавить</a>
+    <a href="/admin/?page={$page}&action=add">добавить</a>
 
 {/if}

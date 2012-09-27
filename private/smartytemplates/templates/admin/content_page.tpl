@@ -5,7 +5,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$conpage.id}{/if}" method="post">
+    <form action="/admin/?page={$page}&action={$action}{if $action=='edit'}&id={$conpage.id}{/if}" method="post">
         <table width="100%">
             <tr>
                 <td class="ttovar" width="100">Название страницы (англ)</td>
@@ -30,14 +30,14 @@
             {foreach from=$conpage_list item=conpage}
                 <tr>
                     <td class="ttovar">{$conpage.title}</td>
-                    <td class="tedit"><a href="?page={$page}&action=edit&id={$conpage.id}" class="tedit">редактировать</a><br/><br/>
-                        <a href="?page={$page}&action=del&id={$conpage.id}" class="tdel">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=edit&id={$conpage.id}" class="tedit">редактировать</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=del&id={$conpage.id}" class="tdel">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
 
-    <a href="?page={$page}&action=add">добавить</a>
+    <a href="/admin/?page={$page}&action=add">добавить</a>
 
 {/if}

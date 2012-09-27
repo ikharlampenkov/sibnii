@@ -2391,3 +2391,179 @@ info   SELECT * FROM news WHERE id=3  26.09.2012 23:17
 info   SELECT * FROM news
                     ORDER BY date DESC LIMIT 5  26.09.2012 23:17
 info   SELECT * FROM client  26.09.2012 23:17
+info   SELECT * FROM service  27.09.2012 19:59
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 19:59
+info   SELECT * FROM client  27.09.2012 19:59
+info   SELECT * FROM service  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT login, password, role FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM service  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT * FROM service  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT * FROM service  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT * FROM service WHERE id=1  27.09.2012 20:00
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=1  27.09.2012 20:00
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=1  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT * FROM project WHERE id=1  27.09.2012 20:00
+info   SELECT service.id, service.title, service.description
+                    FROM service, project_service
+                    WHERE service.id=project_service.service_id AND project_service.project_id=1  27.09.2012 20:00
+info   SELECT * 
+                    FROM gallery
+                    WHERE object_id=1  27.09.2012 20:00
+info   SELECT client.id, client.title, client.description, logo
+                    FROM client, project
+                    WHERE client.id=project.client_id AND project.id=1  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT * FROM service  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM user  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:00
+info   UPDATE user SET password="123", role="admin"  WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM user WHERE login="admin"  27.09.2012 20:00
+info   SELECT * FROM client  27.09.2012 20:00
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:01
+info   SELECT * FROM client WHERE id=2  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:01
+info   UPDATE client
+                    SET title="КРУ", description="<p>\r\n	5677567567</p>\r\n"
+                    WHERE id=2  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:01
+info   SELECT * FROM client WHERE id=2  27.09.2012 20:01
+info   SELECT * FROM client  27.09.2012 20:01
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:02
+info   UPDATE client
+                    SET title="КРУ", description="<p>\r\n	5677567567</p>\r\n"
+                    WHERE id=2  27.09.2012 20:02
+info   SELECT * FROM client  27.09.2012 20:02
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:02
+info   SELECT * FROM client  27.09.2012 20:02
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:02
+info   SELECT * FROM client WHERE id=2  27.09.2012 20:02
+info   SELECT * FROM client  27.09.2012 20:02
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:03
+info   UPDATE client
+                    SET title="КРУ", description="<p>\r\n	5677567567</p>\r\n"
+                    WHERE id=2  27.09.2012 20:03
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:03
+info   SELECT * FROM client  27.09.2012 20:03
+info   SELECT * FROM client  27.09.2012 20:03
+info   SELECT * FROM service  27.09.2012 20:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM personal  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM news  ORDER BY date DESC   27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM service  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM user  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:08
+info   SELECT * FROM content_page  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT * FROM service WHERE id=6  27.09.2012 20:08
+info   SELECT project.id, project.title, project.description, is_complite
+                    FROM project, project_service
+                    WHERE project.id=project_service.project_id AND project_service.service_id=6  27.09.2012 20:08
+info   SELECT DISTINCT client.id, client.title, client.description, logo
+                    FROM client, project, project_service, service
+                    WHERE client.id=project.client_id
+                      AND project.id=project_service.project_id
+                      AND service.id=project_service.service_id
+                      AND service.id=6  27.09.2012 20:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT * FROM news WHERE id=3  27.09.2012 20:08
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:08
+info   SELECT * FROM client  27.09.2012 20:08
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:09
+info   SELECT * FROM user  27.09.2012 20:09
+info   SELECT * FROM client  27.09.2012 20:09
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:09
+info   SELECT * FROM client  27.09.2012 20:09
+info   SELECT * FROM client  27.09.2012 20:09
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:14
+info   SELECT * FROM client  27.09.2012 20:14
+info   SELECT * FROM client  27.09.2012 20:14
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:14
+info   SELECT * FROM content_page  27.09.2012 20:14
+info   SELECT * FROM client  27.09.2012 20:14
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:14
+info   SELECT * FROM content_page WHERE id=1 OR page_title="1"  27.09.2012 20:14
+info   SELECT * FROM client  27.09.2012 20:14
+info   SELECT * FROM service  27.09.2012 20:14
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:14
+info   SELECT * FROM client  27.09.2012 20:14
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:15
+info   SELECT * FROM service  27.09.2012 20:15
+info   SELECT * FROM client  27.09.2012 20:15
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:15
+info   SELECT * FROM service  27.09.2012 20:15
+info   SELECT * FROM client  27.09.2012 20:15
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:15
+info   SELECT * FROM service  27.09.2012 20:15
+info   SELECT * FROM client  27.09.2012 20:15
+info   SELECT password FROM user WHERE login="admin"  27.09.2012 20:15
+info   SELECT * FROM service  27.09.2012 20:15
+info   SELECT * FROM client  27.09.2012 20:15
+info   SELECT * FROM service  27.09.2012 20:15
+info   SELECT * FROM news
+                    ORDER BY date DESC LIMIT 5  27.09.2012 20:15
+info   SELECT * FROM client  27.09.2012 20:15

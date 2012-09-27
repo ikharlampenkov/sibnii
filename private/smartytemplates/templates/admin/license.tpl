@@ -4,12 +4,12 @@
 
     <h2>{$txt}</h2>
 
-    <form action="?page={$page}&action={$action}{if $action=="edit"}&id={$license.id}{/if}" method="post" enctype="multipart/form-data">
+    <form action="/admin/?page={$page}&action={$action}{if $action=="edit"}&id={$license.id}{/if}" method="post" enctype="multipart/form-data">
         <table width="100%" cellpadding="5" cellspacing="2" style="font-size:14px">
             <tr>
                 <td class="pem" width="150">Лицензия</td>
                 <td class="pem">{if !empty($license.img)}<img src="{$siteurl}files/{$license.img_prew}" /><br />
-                    &nbsp;<a href="?page={$page}&action=del_file&id={$license.id}&field=img">удалить</a><br />{/if}
+                    &nbsp;<a href="/admin/?page={$page}&action=del_file&id={$license.id}&field=img">удалить</a><br />{/if}
                     <input type="file"  name="img" /></td>
             </tr>
             <tr class="pem">
@@ -34,14 +34,14 @@
                 <tr>
                     <td class="ttovar">{if $license.img_prew}<img src="{$siteurl}files/{$license.img_prew}" />{else}&nbsp;{/if}</td>
                     <td class="ttovar">{$license.description|truncate:50}</td>
-                    <td class="ttovar"><a href="?page={$page}&action=edit&id={$license.id}" class="tedit">редактировать</a><br/><br/>
-                                       <a href="?page={$page}&action=del&id={$license.id}" class="tdel">удалить</a></td>
+                    <td class="ttovar"><a href="/admin/?page={$page}&action=edit&id={$license.id}" class="tedit">редактировать</a><br/><br/>
+                                       <a href="/admin/?page={$page}&action=del&id={$license.id}" class="tdel">удалить</a></td>
                 </tr>
             {/foreach}
         </table>
     {/if}
 
 
-    <a href="?page={$page}&action=add">добавить</a>
+    <a href="/admin/?page={$page}&action=add">добавить</a>
 
 {/if}

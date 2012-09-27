@@ -5,7 +5,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$client.id}{/if}" method="post" enctype="multipart/form-data">
+    <form action="/admin/?page={$page}&action={$action}{if $action=='edit'}&id={$client.id}{/if}" method="post" enctype="multipart/form-data">
         <table width="100%">
             <tr>
                 <td class="ttovar" style="width: 100px;">Название</td>
@@ -14,7 +14,7 @@
              <tr>
                 <td class="ttovar" >Логотип</td>
                 <td class="ttovar" >{if isset($client) && $client.logo}<img src="{$siteurl}files/{$client.logo}" /><br />
-                    &nbsp;<a href="?page={$page}&action=del_img&id={$client.id}">удалить</a><br />{/if}
+                    &nbsp;<a href="/admin/?page={$page}&action=del_img&id={$client.id}">удалить</a><br />{/if}
                     <input type="file"  name="img" />
                 </td>
             </tr>
@@ -34,13 +34,13 @@
                 <tr>
                     <td class="ttovar">{if $client.logo_prew}<img src="{$siteurl}files/{$client.logo_prew}"/>{else}&nbsp;{/if}</td>
                     <td class="ttovar">{$client.title}</td>
-                    <td class="tedit"><a href="?page={$page}&action=edit&id={$client.id}" class="tedit">редактировать</a><br/><br/>
-                        <a href="?page={$page}&action=del&id={$client.id}" class="tdel">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=edit&id={$client.id}" class="tedit">редактировать</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=del&id={$client.id}" class="tdel">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
-    <a href="?page={$page}&action=add">добавить</a>
+    <a href="/admin/?page={$page}&action=add">добавить</a>
 
 {/if}
