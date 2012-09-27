@@ -62,7 +62,7 @@
 
 <div id="triangl_fon"></div>
 <div id="header">
-    <div class="logo"><a href="/"></a></div>
+    <div class="logo"><a href="/"><img src="/images/logo.jpg" width=100% height=100%/></a></a></div>
 
     <div id="mainmenu">
         <ul class="menu">

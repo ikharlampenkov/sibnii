@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f92a96e2-643f-4e71-9dec-62f5b4cb548e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/logs/syslog.txt" afterPath="$PROJECT_DIR$/private/logs/syslog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/client.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/content_page.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/license.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/license.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/news.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/personal.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/personal.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/project.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/service.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/smartytemplates/templates/admin/user.tpl" afterPath="$PROJECT_DIR$/private/smartytemplates/templates/admin/user.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/admin/index.php" afterPath="$PROJECT_DIR$/public/admin/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/login/index.php" afterPath="$PROJECT_DIR$/public/login/index.php" />
     </list>
     <ignored path="sibnii.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +25,32 @@
     <favorites_list name="sibnii" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.tpl" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.3602422">
+              <folding>
+                <marker date="1348754009873" expanded="true" signature="979:1071" placeholder="..." />
+                <marker date="1348754009873" expanded="true" signature="995:1059" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.tpl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/index.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="90" selection-start="1659" selection-end="1715" vertical-scroll-proportion="-16.384615">
+              <folding>
+                <marker date="1348676217989" expanded="true" signature="786:878" placeholder="..." />
+                <marker date="1348676217989" expanded="true" signature="802:866" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -429,7 +442,11 @@
       <created>1348676264566</created>
       <updated>1348676264566</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Разделение административной и пользовательской части">
+      <created>1348751835303</created>
+      <updated>1348751835303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -456,23 +473,23 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20117396" sideWeight="0.67082536" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253359" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20117396" sideWeight="0.67082536" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -513,7 +530,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Новости теперь отображаются правильно" />
+    <option name="LAST_COMMIT_MESSAGE" value="Разделение административной и пользовательской части" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -532,6 +549,7 @@
     <MESSAGE value="Сторонние изменения&#10;" />
     <MESSAGE value="Кавычи без слэшей" />
     <MESSAGE value="Новости теперь отображаются правильно" />
+    <MESSAGE value="Разделение административной и пользовательской части" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -540,11 +558,6 @@
     <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/news.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/index.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="18" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.605449" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/fancybox/jquery.fancybox-1.3.4.js">
@@ -648,12 +661,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="90" selection-start="1659" selection-end="1715" vertical-scroll-proportion="-16.384615">
+          <folding>
+            <marker date="1348676217989" expanded="true" signature="786:878" placeholder="..." />
+            <marker date="1348676217989" expanded="true" signature="802:866" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/private/smartytemplates/templates/admin/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="24" selection-start="5333" selection-end="5333" vertical-scroll-proportion="0.8284561">
+        <state line="66" column="23" selection-start="2251" selection-end="2251" vertical-scroll-proportion="0.3602422">
           <folding>
-            <marker date="1348751746939" expanded="true" signature="979:1071" placeholder="..." />
-            <marker date="1348751746939" expanded="true" signature="995:1059" placeholder="{...}" />
+            <marker date="1348754009873" expanded="true" signature="979:1071" placeholder="..." />
+            <marker date="1348754009873" expanded="true" signature="995:1059" placeholder="{...}" />
           </folding>
         </state>
       </provider>
