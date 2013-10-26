@@ -12,8 +12,12 @@ body {
     height: 100%;
     min-height: 100%;
     height: auto !important;
-    min-width: 1000px;
+    min-width: 1280px;
 
+}
+
+img {
+	border: 0;
 }
 
 a:hover {
@@ -37,20 +41,24 @@ a {
 #header {
     position: relative;
     width: 100%;
-    height: 276px;
-    min-width: 1000px;
+    height: 376px;
+    min-width: 1280px;
     z-index: 2;
 }
 
 .logo a {
     position: absolute;
     display: block;
-    width: 282px;
-    height: 47px;
-    top: 45px;
+    width: 470px;
+    height: 78px;
+    top: 50px;
     left: 70px;
-    background: url(/images/logo.png) no-repeat left center;
+    /*background: url(/images/logo.jpg) no-repeat left center;*/
     z-index: 3;
+}
+
+.logo div {
+	height:120px;
 }
 
 #header .phone {
@@ -135,13 +143,15 @@ a {
 #header .swf {
     position: absolute;
 
-    top: 96px;
-    right: 433px;
-    width: 526px;
-    height: 141px;
+    top: 140px;
+    right: 381px;
+    /*width: 526px;
+    height: 141px;*/
 
 }
-
+h1 {
+	text-align: center;
+}
 .page_title h1 {
     position: absolute;
     left: 0;
@@ -261,8 +271,8 @@ a {
 .news {
     position: absolute;
     right: 36px;
-    top: 286px;
-    width: 168px;
+    top: 275px;
+    width: 250px;
 }
 
 .news h2 {
@@ -321,17 +331,17 @@ a {
 /*********************** content ********************************/
 
 #content {
-    position: relative;
+    font-size: medium;
+	position: relative;
     width: 63%;
     margin: 30px 0 0 57px;
     height: 100%;
-    min-height: 400px;
+    min-height: 250px;
     z-index: 3;
 
 }
 
 #content p {
-    font-size: 12px;
     font-family: Tahoma;
     color: #383431;
     margin: 0 0 20px 33px;
@@ -430,7 +440,7 @@ a {
 .list_serv li  a {
     color: #1a171b;
     font-family: Tahoma;
-    font-size: 15px;
+    /*font-size: 15px;*/
     text-decoration: none;
 }
 
@@ -535,16 +545,16 @@ a {
 #clients_slider {
     position: relative;
     width: 100%;
-    height: 58px;
-    line-height: 58px;
+    height: 68px;
+    line-height: 68px;
     background: #efeeee;
     margin-top: 20px
 }
 
 #clients_slider .clients {
     position: absolute;
-    height: 58px;
-    line-height: 58px;
+    /*height: 58px;*/
+    /*line-height: 58px;*/
     left: 90px;
     top: 0;
     color: #000;
@@ -554,8 +564,8 @@ a {
 }
 
 #clients_slider .slider {
-    width: 417px;
-    height: 58px;
+    width: 367px;
+    /*height: 68px;*/
     position: absolute;
     top: 7px;
     left: 320px;
@@ -567,7 +577,7 @@ a {
     width: 22px;
     height: 31px;
     position: absolute;
-    top: 8px;
+    top: 12px;
     left: -25px;
     background: url(/images/arrl.png) no-repeat left top;
     z-index: 4;
@@ -578,7 +588,7 @@ a {
     width: 22px;
     height: 31px;
     position: absolute;
-    top: 8px;
+    top: 12px;
     right: -45px;
     background: url(/images/arrr.png) no-repeat left top;
     z-index: 4;
@@ -588,7 +598,7 @@ a {
 #clients_slider .slider  #cont {
     overflow: hidden;
     width: 417px;
-    height: 58px;
+    /*height: 68px;*/
     top: 0px;
     left: 0px;
     z-index: 3;
@@ -600,7 +610,7 @@ a {
 
 #clients_slider .slider  #cont .items {
     list-style: none outside none;
-    margin: 0;
+    margin: 5px;
     padding: 0;
 }
 

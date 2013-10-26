@@ -5,7 +5,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action={$action}{if $action=="edit"}&login={$user.login}{/if}" method="post">
+    <form action="/admin/?page={$page}&action={$action}{if $action=="edit"}&login={$user.login}{/if}" method="post">
         <table width="100%">
             <tr>
                 <td class="ttovar"  width="200">Логин</td>
@@ -33,13 +33,13 @@
     {if $user_list!==false}
         <table width="100%">
         <tr>
-                    <td class="ttovar" align="center" colspan="3"><a href="?page={$page}&action=add">добавить</a></td></tr>
+                    <td class="ttovar" align="center" colspan="3"><a href="/admin/?page={$page}&action=add">добавить</a></td></tr>
             {foreach from=$user_list item=user}
                 <tr>
                     <td class="ttovar" >{$user.login}</td>
                     <td class="ttovar" >{$user.role}</td>
-                    <td class="tedit" ><a href="?page={$page}&action=edit&login={$user.login}">редактировать</a><br />
-                                       <a href="?page={$page}&action=del&login={$user.login}" onclick="return confirmDelete('{$user.login}');" style="color: #830000">удалить</a> </td>
+                    <td class="tedit" ><a href="/admin/?page={$page}&action=edit&login={$user.login}">редактировать</a><br />
+                                       <a href="/admin/?page={$page}&action=del&login={$user.login}" onclick="return confirmDelete('{$user.login}');" style="color: #830000">удалить</a> </td>
                 </tr>
             {/foreach}
         </table>

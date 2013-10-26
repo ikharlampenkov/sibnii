@@ -15,17 +15,13 @@ if ($o_fmuser->isLogin()) {
         header("Location: /");
     }
 
-    if ($o_fmuser->getUserRole() == share_user::UT_ADMIN) {
-        include_once $_SERVER['DOCUMENT_ROOT'] . '/admin/index.php';
-    } else {
-
-    }
+    header("Location: /admin/");
 } else {
     $o_smarty->assign('login', false);
 
     if (isset($_POST['login']) && isset($_POST['psw'])) {
         if ($o_fmuser->logIn($_POST['login'], $_POST['psw'])) {
-            header("Location: /");
+            header("Location: /admin/");
         } else {
             $o_smarty->assign('login_fail', '1');
         }
@@ -33,4 +29,4 @@ if ($o_fmuser->isLogin()) {
 
     $o_smarty->display('login.tpl');
 }
-?>
+

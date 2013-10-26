@@ -36,6 +36,7 @@ class client extends sbn {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['logo']);
                     $res['logo_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result;
             } else
@@ -55,6 +56,7 @@ class client extends sbn {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['logo']);
                     $res['logo_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result[0];
             } else
@@ -77,6 +79,7 @@ class client extends sbn {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['logo']);
                     $res['logo_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result;
             } else
@@ -93,6 +96,7 @@ class client extends sbn {
             if (isset($result[0])) {
                 $this->_img->setName($result[0]['logo']);
                 $result[0]['logo_prew'] = $this->_img->getPreview();
+                $result[0]['description'] = stripcslashes(stripslashes($result[0]['description']));
                 return $result[0];
             } else
                 return false;

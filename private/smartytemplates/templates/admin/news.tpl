@@ -4,7 +4,7 @@
 
     <h2>{$txt}</h2>
 
-    <form action="?page={$page}&action={$action}{if edit}&id={$news.id}{/if}" method="post">
+    <form action="/admin/?page={$page}&action={$action}{if edit}&id={$news.id}{/if}" method="post">
         <table width="100%">
             <tr>
                 <td class="ttovar" style="width: 100px;">Название</td>
@@ -42,15 +42,15 @@
                     <td class="ttovar">{$news.date|date_format:"%d.%m.%Y"}</td>
                     <td class="ttovar">{$news.title}</td>
                     <td class="ttovar">{$news.short_text|strip_tags:false|truncate:50}</td>
-                    <td class="tedit"><a href="?page={$page}&action=edit_news&id={$news.id}" class="tedit">редактировать</a><br/><br/>
-                                       <a href="?page={$page}&action=del_news&id={$news.id}" class="tedit">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=edit_news&id={$news.id}" class="tedit">редактировать</a><br/><br/>
+                                       <a href="/admin/?page={$page}&action=del_news&id={$news.id}" class="tedit">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
 
-    <a href="?page={$page}&action=add_news">добавить</a>
+    <a href="/admin/?page={$page}&action=add_news">добавить</a>
 
 
 {/if}

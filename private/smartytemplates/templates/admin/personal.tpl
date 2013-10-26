@@ -5,7 +5,7 @@
 
 <h2>{$txt}</h2>
 
-<form action="?page={$page}&action={$action}{if $action=="edit"}&id={$personal.id}{/if}" method="post" enctype="multipart/form-data">
+<form action="/admin/?page={$page}&action={$action}{if $action=="edit"}&id={$personal.id}{/if}" method="post" enctype="multipart/form-data">
     <table width="100%" cellpadding="5" cellspacing="2" style="font-size:14px">
         <tr class="ttovar">
             <td width="200">ФИО</td>
@@ -14,7 +14,7 @@
         <tr class="ttovar">
             <td>Фото</td>
             <td>{if !empty($personal.foto)}<img src="{$siteurl}files/{$personal.foto}" /><br />
-                &nbsp;<a href="?page={$page}&action=del_file&id={$personal.id}&field=img">удалить</a><br />{/if}
+                &nbsp;<a href="/admin/?page={$page}&action=del_file&id={$personal.id}&field=img">удалить</a><br />{/if}
                 <input type="file"  name="img" /></td>
         </tr>
         <tr class="ttovar">
@@ -27,7 +27,7 @@
         </tr>
         <tr class="ttovar">
             <td>Контакты</td>
-            <td><textarea name="data[contact]" />{$personal.contact}</textarea></td>
+            <td>{$ckeditor}{*<textarea name="data[contact]" />{$personal.contact}</textarea>*}</td>
         </tr>
     </table>
     <input id="save" name="save" type="submit" value="Сохранить" />
@@ -50,14 +50,14 @@
 	<td class="ttovar">{$personal.fio}</td>
         <td class="ttovar">{$personal.department}</td>
         <td class="ttovar">{$personal.position}</td>
-        <td class="tedit"><a href="?page={$page}&action=edit&id={$personal.id}" class="tedit">редактировать</a><br /><br />
-                           <a href="?page={$page}&action=del&id={$personal.id}" class="tdel">удалить</a></td>
+        <td class="tedit"><a href="/admin/?page={$page}&action=edit&id={$personal.id}" class="tedit">редактировать</a><br /><br />
+                           <a href="/admin/?page={$page}&action=del&id={$personal.id}" class="tdel">удалить</a></td>
     </tr>
 {/foreach}
 </table>
 {/if}
 
-<a href="?page={$page}&action=add">добавить</a>
+<a href="/admin/?page={$page}&action=add">добавить</a>
 
 
 

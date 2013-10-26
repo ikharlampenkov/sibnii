@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <title>{$title}</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+	<title>{$title}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="/css/admin.css"/>
@@ -29,7 +30,7 @@
     <![endif]-->
 
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.4.pack.js"></script>
+    <script language="JavaScript" type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
     <script language="JavaScript" type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
     <link href="/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css">
 
@@ -61,23 +62,23 @@
 
 <div id="triangl_fon"></div>
 <div id="header">
-    <div class="logo"><a href="/"></a></div>
+    <div class="logo"><a href="/"><img src="/images/logo.jpg" width=100% height=100%/></a></a></div>
 
     <div id="mainmenu">
         <ul class="menu">
-            <li><a href="?page=content_page&action=edit&id=about" {if $page!='project' && $page!='service'}class="selected"{/if}>Компания</a>
+            <li><a href="/admin/?page=content_page&action=edit&id=about" {if $page!='project' && $page!='service'}class="selected"{/if}>Компания</a>
                 <ul>
-                    <li><a href="?page=content_page&action=edit&id=about">О Компании</a></li>
-                    <li><a href="?page=content_page&action=edit&id=naprav">Направления деятельности</a></li>
-                    <li><a href="?page=license">Лицензии и допуски СРО</a></li>
-                    <li><a href="?page=personal">Руководство</a></li>
-                    <li><a href="?page=content_page&action=edit&id=vacancy">Вакансии</a></li>
-                    <li><a href="?page=content_page&action=edit&id=rekvisite">Реквизиты</a></li>
-                    <li><a href="?page=content_page&action=edit&id=contacts">Контакты</a></li>
+                    <li><a href="/admin/?page=content_page&action=edit&id=about">О Компании</a></li>
+                    <li><a href="/admin/?page=content_page&action=edit&id=naprav">Направления деятельности</a></li>
+                    <li><a href="/admin/?page=license">Лицензии и допуски СРО</a></li>
+                    <li><a href="/admin/?page=personal">Руководство</a></li>
+                    <li><a href="/admin/?page=content_page&action=edit&id=vacancy">Вакансии</a></li>
+                    <li><a href="/admin/?page=content_page&action=edit&id=rekvisite">Реквизиты</a></li>
+                    <li><a href="/admin/?page=content_page&action=edit&id=contacts">Контакты</a></li>
                 </ul>
             </li>
-            <li><a href="?page=service" {if $page=='service'}class="selected"{/if}>Услуги</a></li>
-            <li><a href="?page=project" {if $page=='project'}class="selected"{/if}>Проекты</a></li>
+            <li><a href="/admin/?page=service" {if $page=='service'}class="selected"{/if}>Услуги</a></li>
+            <li><a href="/admin/?page=project" {if $page=='project'}class="selected"{/if}>Проекты</a></li>
 
         </ul>
     </div>
@@ -110,7 +111,7 @@
 
                 <p class="title">{$news.title}</p>
 
-                <p class="descript"><a href="{$siteurl}?page=news&action=view_news&id={$news.id}">{$news.short_text}</a></p>
+                <p class="descript"><a href="{$siteurl}/admin/?page=news&action=view_news&id={$news.id}">{$news.short_text}</a></p>
 
                 <div class="arr">&rarr;</div>
             </div>
@@ -135,7 +136,7 @@
                         <td style="font-size:26px; color: white;padding-left: 25px;" valign="middle">административная панель управения</td>
                         <td width="300" valign="middle" style="color:white">
 
-                            Пользователь: {$user} &nbsp; / &nbsp; <a href="{$siteurl}?logout" style="color:#ffffff;">Выйти</a>
+                            Пользователь: {$user} &nbsp; / &nbsp; <a href="{$siteurl}admin/?logout" style="color:#ffffff;">Выйти</a>
 
                         </td>
                     </tr>
@@ -156,28 +157,28 @@
                                     <td><h1>Меню:</h1></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=content_page" class="menu">Контентные страницы</a></td>
+                                    <td><a href="/admin/?page=content_page" class="menu">Контентные страницы</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=user" class="menu">Пользователи</a></td>
+                                    <td><a href="/admin/?page=user" class="menu">Пользователи</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=client" class="menu">Клиенты</a></td>
+                                    <td><a href="/admin/?page=client" class="menu">Клиенты</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=service" class="menu">Услуги</a></td>
+                                    <td><a href="/admin/?page=service" class="menu">Услуги</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=project" class="menu">Проекты</a></td>
+                                    <td><a href="/admin/?page=project" class="menu">Проекты</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=license" class="menu">Лицензии</a></td>
+                                    <td><a href="/admin/?page=license" class="menu">Лицензии</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=personal" class="menu">Сотрудники</a></td>
+                                    <td><a href="/admin/?page=personal" class="menu">Сотрудники</a></td>
                                 </tr>
                                 <tr>
-                                    <td><a href="?page=news" class="menu">Новости и события</a></td>
+                                    <td><a href="/admin/?page=news" class="menu">Новости и события</a></td>
                                 </tr>
                             </table>
 
@@ -252,10 +253,10 @@
     <div class="copyr"> &copy; {$smarty.now|date_format:"%Y"}, ООО "СибНИИуглероект"</div>
     <div id="footmenu">
         <ul class="menu">
-            <li><a href="?page=content_page&action=edit&id=contacts" {if $page=='content_page' && $conpage_title=='contacts'}class="selected"{/if}>Контакты</a></li>
-            <li><a href="?page=content_page&action=edit&id=about" {if $page=='content_page' && $conpage_title=='about'}class="selected"{/if}>Компания</a></li>
-            <li><a href="?page=service" {if $page=='service'}class="selected"{/if}>Услуги</a></li>
-            <li><a href="?page=project" {if $page=='project'}class="selected"{/if}>Проекты</a></li>
+            <li><a href="/admin/?page=content_page&action=edit&id=contacts" {if $page=='content_page' && $conpage_title=='contacts'}class="selected"{/if}>Контакты</a></li>
+            <li><a href="/admin/?page=content_page&action=edit&id=about" {if $page=='content_page' && $conpage_title=='about'}class="selected"{/if}>Компания</a></li>
+            <li><a href="/admin/?page=service" {if $page=='service'}class="selected"{/if}>Услуги</a></li>
+            <li><a href="/admin/?page=project" {if $page=='project'}class="selected"{/if}>Проекты</a></li>
         </ul>
     </div>
 </div>

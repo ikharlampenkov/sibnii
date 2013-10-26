@@ -34,6 +34,7 @@ class gallery extends sbn {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['img']);
                     $res['img_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result;
             } else
@@ -53,6 +54,7 @@ class gallery extends sbn {
                 foreach ($result as &$res) {
                     $this->_img->setName($res['img']);
                     $res['img_prew'] = $this->_img->getPreview();
+                    $res['description'] = stripcslashes(stripslashes($res['description']));
                 }
                 return $result;
             } else
@@ -69,6 +71,7 @@ class gallery extends sbn {
             if (isset($result[0])) {
                 $this->_img->setName($result[0]['img']);
                 $result[0]['img_prew'] = $this->_img->getPreview();
+                $result[0]['description'] = stripcslashes(stripslashes($result[0]['description']));
                 return $result[0];
             } else
                 return false;

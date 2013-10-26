@@ -5,7 +5,7 @@
 
     <h1>{$txt}</h1>
 
-    <form action="?page={$page}&action={$action}{if $action=='edit'}&id={$service.id}{/if}" method="post">
+    <form action="/admin/?page={$page}&action={$action}{if $action=='edit'}&id={$service.id}{/if}" method="post">
         <table width="100%">
             <tr>
                 <td class="ttovar" style="width: 100px;">Название</td>
@@ -26,13 +26,13 @@
             {foreach from=$service_list item=service}
                 <tr>
                     <td class="ttovar">{$service.title}</td>
-                    <td class="tedit"><a href="?page={$page}&action=edit&id={$service.id}" class="tedit">редактировать</a><br/><br/>
-                        <a href="?page={$page}&action=del&id={$service.id}" class="tdel">удалить</a>
+                    <td class="tedit"><a href="/admin/?page={$page}&action=edit&id={$service.id}" class="tedit">редактировать</a><br/><br/>
+                        <a href="/admin/?page={$page}&action=del&id={$service.id}" class="tdel">удалить</a>
                     </td>
                 </tr>
             {/foreach}
         </table>
     {/if}
-    <a href="?page={$page}&action=add">добавить</a>
+    <a href="/admin/?page={$page}&action=add">добавить</a>
 
 {/if}

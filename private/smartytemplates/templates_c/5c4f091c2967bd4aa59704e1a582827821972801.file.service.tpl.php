@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.7, created on 2012-06-17 23:22:39
+<?php /* Smarty version Smarty-3.0.7, created on 2012-09-26 20:28:00
          compiled from "F:/www/sibnii/private/smartytemplates/templates/service.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:224654fde044f5b1571-16390903%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:15920506302e0be5060-57511502%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '5c4f091c2967bd4aa59704e1a582827821972801' => 
     array (
       0 => 'F:/www/sibnii/private/smartytemplates/templates/service.tpl',
-      1 => 1339945319,
+      1 => 1348664985,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '224654fde044f5b1571-16390903',
+  'nocache_hash' => '15920506302e0be5060-57511502',
   'function' => 
   array (
   ),
@@ -22,7 +22,7 @@ $_smarty_tpl->decodeProperties(array (
 <h2><?php echo $_smarty_tpl->getVariable('service')->value['title'];?>
 </h2>
 
-<p><?php echo nl2br($_smarty_tpl->getVariable('service')->value['description']);?>
+<p><?php echo $_smarty_tpl->getVariable('service')->value['description'];?>
 </p>
 
 
